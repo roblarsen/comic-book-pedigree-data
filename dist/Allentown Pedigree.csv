@@ -1,9 +1,9 @@
-Title,Issue,JP grade,SF grade,list price,CGC grade,
+Title,Issue,JP grade,SF grade,list price,CGC grade,Notes
 All Winners,3,VF/NM,M,575,9.2,
 Batman,1,"1"" spine o/w NM",,6200,,
 Batman,2,F/VF,VF+,,,
 Batman,3,VF+,M,,,
-Batman,4,NM+,M,,,Highest graded is CGC 9.2
+Batman,4,NM+,M,,,9.2 is highest graded
 Batman,5,VG+,VG+,,,
 Batman,6,NM/M,M,,9.6,1/1 highest graded
 Batman,9,VF+,VF+,,,
@@ -23,7 +23,7 @@ Captain America,63,VG+,VG,,,
 Captain Fearless,2,VF-,VF+,60,,
 Contact ,11,GVG,G,15,,
 Daredevil Battles Hitler,1,VF/NM,M,1400,,
-Daring Mystery,8,VF+,M,500,,
+Daring Mystery,8,VF+,M,500,,Highest grade is an 8.0
 Detective,26,VF/NM,M,,,Highest graded is a 9.0. The church copy is an 8.0
 Detective,27,VF/NM,M,,,Best known copy
 Detective,28,VF,M,,,
@@ -32,7 +32,7 @@ Detective,30,NM-,VF,,,
 Detective,31,VF,M,2300,,Highest graded is an 8.0
 Detective,33,VF/NM,M,,9,
 Detective,34,VF,M,,,
-Detective,35,VF,M,,,
+Detective,35,VF,M,,9.4,
 Detective,38,VF,M,,9.4,1/1 highest graded
 Detective,44,NM,M,,,
 Detective,45,VF/NM,M,,,
@@ -69,8 +69,8 @@ Mystic,1,VF/NM,M,2300,9.2,
 Mystic,2,VF+,M,800,9.4,1/1 highest graded
 Mystic,3,VF,M,695,9.4,1/1 highest graded
 Mystic,9,VG/F,VG/F,200,,
-Nickel,2,NM/M,M,280,,
-Nickel,3,NM/M,M,240,,
+Nickel,2,NM/M,M,280,9.4,
+Nickel,3,NM/M,M,240,9.6,
 Nickel,4,NM/M,M,200,,
 Nickel,6,VF,VF+,130,9 (c1),
 Nickel,7,,,,6.5,
@@ -121,7 +121,7 @@ Wings,28,VF-,M,,9.4,1/1 highest graded
 Wings,30,VF-,M,,,
 Wings,31,VF/NM,M,,,
 Wonder,1,NM,M,1960,9.0(Q),
-Wonder,2,NM,M,1000,9.2,
+Wonder,2,NM,M,1000,9.2,1/1 highest graded by a huge margin
 Wonderworld,3,VF/NM,M,,9.4,
 Wonderworld,4,VF,M,,,
 Wonderworld,5,VF/NM,M,,,Highest graded is the church copy at 9.0
@@ -136,4 +136,4 @@ Wonderworld,13,NM,M,,9.6,1/1 highest graded
 Wonderworld,14,NM,M,,8,
 Wonderworld,15,NM,M,,,2 at 9.0 are highest graded
 Wonderworld,17,F/VF,VF,78,,
-Zip,9,NM,M,150,9.6,
+Zip,9,NM,M,150,9.6,1/1 highest graded
