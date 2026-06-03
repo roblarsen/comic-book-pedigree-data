@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larson List Browser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-quartz.css"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f5f7fa;
+        color: #1f2937;
+      }
+
+      header {
+        padding: 1rem 1.5rem;
+        background: #ffffff;
+        border-bottom: 1px solid #d1d5db;
+      }
+
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin: 0;
+        color: #4b5563;
+      }
+
+      main {
+        padding: 1rem 1.5rem 1.5rem;
+      }
+
+      .toolbar {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .toolbar label {
+        font-weight: 600;
+      }
+
+      .toolbar input {
+        width: min(420px, 100%);
+        padding: 0.625rem 0.75rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 0.5rem;
+        font: inherit;
+      }
+
+      .status {
+        min-height: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: #374151;
+      }
+
+      #grid {
+        width: 100%;
+        height: calc(100vh - 190px);
+        min-height: 600px;
+        background: #ffffff;
+        border: 1px solid #d1d5db;
+        border-radius: 0.75rem;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Larson List Browser</h1>
+      <p>Browse and filter the Larson pedigree CSV data.</p>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <label for="quick-filter">Search</label>
+        <input
+          id="quick-filter"
+          type="search"
+          placeholder="Filter all columns..."
+          autocomplete="off"
+        />
+      </div>
+      <div id="status" class="status" aria-live="polite">Loading data…</div>
+      <div id="grid" class="ag-theme-quartz"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
