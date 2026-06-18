@@ -1,4 +1,4 @@
-const CSV_URL = '../Larson/workspace/larson-list.csv';
+const CSV_URL = './larson-list.csv';
 
 const gridElement = document.getElementById('grid');
 const quickFilterInput = document.getElementById('quick-filter');

@@ -1,0 +1,8 @@
+{
+  "name": "comic-book-pedigree-docs",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:data",
+    "build:data": "cp ../Larson/workspace/larson-list.csv ./larson-list.csv"
+  }
+}
