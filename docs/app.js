@@ -9,7 +9,7 @@ const PEDIGREE_SOURCES = [
     id: 'allentown',
     label: 'Allentown Pedigree',
     subtitle: 'Browse and filter pedigree CSV data.',
-    fileName: '../dist/Allentown Pedigree.csv',
+    fileName: './allentown-pedigree.csv',
   },
 ];
 
