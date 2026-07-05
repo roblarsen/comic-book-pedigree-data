@@ -1,10 +1,28 @@
-const CSV_URL = './larson-list.csv';
+const PEDIGREE_SOURCES = [
+  {
+    id: 'larson',
+    label: 'Lamont Larson Collection',
+    subtitle: 'Browse and filter pedigree CSV data.',
+    fileName: './larson-list.csv',
+  },
+  {
+    id: 'allentown',
+    label: 'Allentown Pedigree',
+    subtitle: 'Browse and filter pedigree CSV data.',
+    fileName: './allentown-pedigree.csv',
+  },
+];
 
 const gridElement = document.getElementById('grid');
 const quickFilterInput = document.getElementById('quick-filter');
 const statusElement = document.getElementById('status');
+const titleElement = document.getElementById('app-title');
+const subtitleElement = document.getElementById('app-subtitle');
+const pedigreeTabs = Array.from(document.querySelectorAll('[data-pedigree-tab]'));
 
 let gridApi;
+let activePedigree = PEDIGREE_SOURCES[0];
+const pedigreeCache = new Map();
 
 function parseCsv(text) {
   const rows = [];
@@ -76,10 +94,78 @@ function parseCsv(text) {
   return { headers, records };
 }
 
-function buildColumnDefs(headers) {
-  return headers.map((header) => ({
-    field: header,
-    headerName: header,
+function normalizeHeaderKey(header, index) {
+  const normalized = header.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return normalized || `column${index + 1}`;
+}
+
+function buildSchema(headers) {
+  const usedKeys = new Set();
+
+  return headers.map((header, index) => {
+    const label = header.trim() || `Column ${index + 1}`;
+    let field = normalizeHeaderKey(label, index);
+
+    while (usedKeys.has(field)) {
+      field = `${field}_${index + 1}`;
+    }
+
+    usedKeys.add(field);
+
+    return {
+      field,
+      headerName: label,
+      sourceHeader: header,
+    };
+  });
+}
+
+function buildRows(records, schema) {
+  return records.map((record) => {
+    const row = {};
+
+    schema.forEach((column) => {
+      row[column.field] = (record[column.sourceHeader] ?? '').trim();
+    });
+
+    return row;
+  });
+}
+
+async function loadPedigreeData(fileName) {
+  const cached = pedigreeCache.get(fileName);
+
+  if (cached) {
+    return cached;
+  }
+
+  const response = await fetch(fileName);
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} while loading CSV`);
+  }
+
+  const csvText = await response.text();
+  const { headers, records } = parseCsv(csvText);
+
+  if (headers.length === 0) {
+    throw new Error('CSV file appears to be empty.');
+  }
+
+  const schema = buildSchema(headers);
+  const result = {
+    schema,
+    rows: buildRows(records, schema),
+  };
+
+  pedigreeCache.set(fileName, result);
+  return result;
+}
+
+function buildColumnDefs(schema) {
+  return schema.map((column) => ({
+    field: column.field,
+    headerName: column.headerName,
     sortable: true,
     filter: true,
     resizable: true,
@@ -96,26 +182,47 @@ function autoSizeAllColumns(api, columnDefs) {
   });
 }
 
-async function loadGrid() {
-  try {
-    const response = await fetch(CSV_URL);
+function updateStatus(rowCount) {
+  if (!gridApi) {
+    statusElement.textContent = `Loaded ${rowCount} rows from ${activePedigree.label}.`;
+    return;
+  }
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status} while loading CSV`);
-    }
+  const displayedCount = gridApi.getDisplayedRowCount();
+  statusElement.textContent = `Showing ${displayedCount} of ${rowCount} rows from ${activePedigree.label}.`;
+}
 
-    const csvText = await response.text();
-    const { headers, records } = parseCsv(csvText);
+function updateHeaderContent() {
+  titleElement.textContent = activePedigree.label;
+  subtitleElement.textContent = activePedigree.subtitle;
+}
 
-    if (headers.length === 0) {
-      throw new Error('CSV file appears to be empty.');
-    }
+function updateActiveTabs() {
+  pedigreeTabs.forEach((tab) => {
+    const isActive = tab.dataset.pedigreeTab === activePedigree.id;
+    tab.classList.toggle('is-active', isActive);
+    tab.setAttribute('aria-selected', String(isActive));
+  });
+}
 
-    const columnDefs = buildColumnDefs(headers);
+function resetGridContext() {
+  quickFilterInput.value = '';
 
+  if (!gridApi) {
+    return;
+  }
+
+  gridApi.setFilterModel(null);
+  gridApi.setGridOption('quickFilterText', '');
+}
+
+function renderTable(schema, rows) {
+  const columnDefs = buildColumnDefs(schema);
+
+  if (!gridApi) {
     const gridOptions = {
       columnDefs,
-      rowData: records,
+      rowData: rows,
       defaultColDef: {
         sortable: true,
         filter: true,
@@ -128,26 +235,80 @@ async function loadGrid() {
       onGridReady(event) {
         gridApi = event.api;
         autoSizeAllColumns(event.api, columnDefs);
-        statusElement.textContent = `Loaded ${records.length} rows from larson-list.csv.`;
+        updateStatus(rows.length);
       },
       onFirstDataRendered(event) {
         autoSizeAllColumns(event.api, columnDefs);
       },
+      onFilterChanged() {
+        updateStatus(rows.length);
+      },
+      onSortChanged() {
+        updateStatus(rows.length);
+      },
+      onPaginationChanged() {
+        updateStatus(rows.length);
+      },
     };
 
     agGrid.createGrid(gridElement, gridOptions);
+    return;
+  }
+
+  gridApi.setGridOption('columnDefs', columnDefs);
+  gridApi.setGridOption('rowData', rows);
+  autoSizeAllColumns(gridApi, columnDefs);
+  updateStatus(rows.length);
+}
+
+async function setActivePedigree(pedigreeId) {
+  const pedigree = PEDIGREE_SOURCES.find((item) => item.id === pedigreeId);
+
+  if (!pedigree || pedigree.id === activePedigree.id) {
+    return;
+  }
+
+  activePedigree = pedigree;
+  updateActiveTabs();
+  updateHeaderContent();
+  resetGridContext();
+  statusElement.textContent = `Loading ${activePedigree.label}…`;
+
+  try {
+    const { schema, rows } = await loadPedigreeData(activePedigree.fileName);
+    renderTable(schema, rows);
   } catch (error) {
     console.error(error);
     statusElement.textContent = `Failed to load CSV data: ${error.message}`;
   }
 }
 
-quickFilterInput.addEventListener('input', (event) => {
-  if (!gridApi) {
-    return;
+async function init() {
+  updateHeaderContent();
+  updateActiveTabs();
+
+  pedigreeTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      setActivePedigree(tab.dataset.pedigreeTab);
+    });
+  });
+
+  quickFilterInput.addEventListener('input', (event) => {
+    if (!gridApi) {
+      return;
+    }
+
+    gridApi.setGridOption('quickFilterText', event.target.value);
+    updateStatus(gridApi.getDisplayedRowCount());
+  });
+
+  try {
+    const { schema, rows } = await loadPedigreeData(activePedigree.fileName);
+    renderTable(schema, rows);
+  } catch (error) {
+    console.error(error);
+    statusElement.textContent = `Failed to load CSV data: ${error.message}`;
   }
+}
 
-  gridApi.setGridOption('quickFilterText', event.target.value);
-});
-
-loadGrid();
+init();

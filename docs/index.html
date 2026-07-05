@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Larson List Browser</title>
+    <title>Comic Book Pedigree Browser</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"
@@ -44,6 +44,30 @@
         color: #4b5563;
       }
 
+      .pedigree-tabs {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .pedigree-tab {
+        border: 1px solid #cbd5e1;
+        background: #f8fafc;
+        color: #1f2937;
+        border-radius: 999px;
+        font: inherit;
+        font-weight: 600;
+        padding: 0.45rem 0.85rem;
+        cursor: pointer;
+      }
+
+      .pedigree-tab.is-active {
+        border-color: #1f2937;
+        background: #1f2937;
+        color: #ffffff;
+      }
+
       main {
         padding: 1rem 1.5rem 1.5rem;
       }
@@ -76,8 +100,8 @@
 
       #grid {
         width: 100%;
-        height: calc(100vh - 190px);
-        min-height: 600px;
+        height: calc(100vh - 240px);
+        min-height: 560px;
         background: #ffffff;
         border: 1px solid #d1d5db;
         border-radius: 0.75rem;
@@ -87,8 +111,26 @@
   </head>
   <body>
     <header>
-      <h1>Larson List Browser</h1>
-      <p>Browse and filter the Larson pedigree CSV data.</p>
+      <h1 id="app-title">Lamont Larson Collection</h1>
+      <p id="app-subtitle">Browse and filter pedigree CSV data.</p>
+      <nav class="pedigree-tabs" aria-label="Pedigree datasets">
+        <button
+          type="button"
+          class="pedigree-tab is-active"
+          data-pedigree-tab="larson"
+          aria-selected="true"
+        >
+          Lamont Larson Collection
+        </button>
+        <button
+          type="button"
+          class="pedigree-tab"
+          data-pedigree-tab="allentown"
+          aria-selected="false"
+        >
+          Allentown Pedigree
+        </button>
+      </nav>
     </header>
 
     <main>

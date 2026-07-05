@@ -3,6 +3,6 @@
   "private": true,
   "scripts": {
     "build": "npm run build:data",
-    "build:data": "cp ../Larson/workspace/larson-list.csv ./larson-list.csv"
+    "build:data": "cp ../Larson/workspace/larson-list.csv ./larson-list.csv && cp ../dist/Allentown\\ Pedigree.csv ./allentown-pedigree.csv"
   }
 }
