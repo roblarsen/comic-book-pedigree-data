@@ -1,0 +1,20 @@
+{
+  "name": "silver-age-marvel-art-census",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Silver Age Marvel original art census CRUD manager and static table builder",
+  "scripts": {
+    "dev": "npm run build:app && serve .",
+    "build:app": "tsc",
+    "build:static": "tsx build-html.ts",
+    "build": "npm run build:app && npm run build:static",
+    "serve": "npm run build:app && serve ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "serve": "^14.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
