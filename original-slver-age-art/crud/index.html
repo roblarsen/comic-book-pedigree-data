@@ -18,10 +18,10 @@
       --tag-verified-txt: #0369a1;
       --tag-complete: #dcfce7;
       --tag-complete-txt: #15803d;
-      --tag-backup: #fef9c3;
-      --tag-backup-txt: #854d0e;
-      --tag-ghost: #fee2e2;
-      --tag-ghost-txt: #b91c1c;
+      --tag-dispersed: #fef9c3;
+      --tag-dispersed-txt: #854d0e;
+      --tag-unconfirmed: #fee2e2;
+      --tag-unconfirmed-txt: #b91c1c;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -100,10 +100,10 @@
       text-transform: uppercase;
       white-space: nowrap;
     }
-    .status-Verified { background: var(--tag-verified); color: var(--tag-verified-txt); }
-    .status-Complete { background: var(--tag-complete); color: var(--tag-complete-txt); }
-    .status-Backup-Only { background: var(--tag-backup); color: var(--tag-backup-txt); }
-    .status-Ghost { background: var(--tag-ghost); color: var(--tag-ghost-txt); }
+    .status-verified { background: var(--tag-verified); color: var(--tag-verified-txt); }
+    .status-complete-intact { background: var(--tag-complete); color: var(--tag-complete-txt); }
+    .status-dispersed { background: var(--tag-dispersed); color: var(--tag-dispersed-txt); }
+    .status-unconfirmed { background: var(--tag-unconfirmed); color: var(--tag-unconfirmed-txt); }
 
     .actions { display: flex; gap: 8px; }
     .actions button { padding: 4px 8px; font-size: 12px; }
@@ -155,13 +155,13 @@
 </header>
 
   <div class="controls">
-    <input type="text" id="search-input" placeholder="Search by title, artist, or issue..." />
+    <input type="text" id="search-input" placeholder="Search by title, creator, issue, or page..." />
     <select id="status-filter">
       <option value="">All Statuses</option>
-      <option value="Verified">Verified</option>
-      <option value="Complete">Complete</option>
-      <option value="Backup Only">Backup Only</option>
-      <option value="Ghost">Ghost</option>
+      <option value="verified">verified</option>
+      <option value="complete_intact">complete intact</option>
+      <option value="dispersed">dispersed</option>
+      <option value="unconfirmed">unconfirmed</option>
     </select>
   </div>
 
@@ -171,7 +171,7 @@
         <tr>
           <th>Title &amp; Issue</th>
           <th>Status</th>
-          <th>Artist(s)</th>
+          <th>Creator(s)</th>
           <th>Description</th>
           <th>Provenance / Links</th>
           <th>Actions</th>
@@ -192,34 +192,51 @@
           <input type="text" id="seriesTitle" required />
         </div>
         <div class="form-group">
-          <label for="issueDisplay">Issue Display (e.g. "#1", "#1–#5")</label>
-          <input type="text" id="issueDisplay" required />
+          <label for="issueNumber">Issue Number</label>
+          <input type="number" id="issueNumber" min="1" required />
         </div>
         <div class="form-group">
-          <label for="issueNumbers">Issue Numbers (comma-separated, e.g. "1, 2, 3")</label>
-          <input type="text" id="issueNumbers" required />
+          <label for="storyPageNumbers">Story Page Numbers (comma-separated)</label>
+          <input type="text" id="storyPageNumbers" required />
         </div>
         <div class="form-group">
-          <label for="status">Status</label>
+          <label for="status">Survival Status</label>
           <select id="status" required>
-            <option value="Verified">Verified</option>
-            <option value="Complete">Complete</option>
-            <option value="Backup Only">Backup Only</option>
-            <option value="Ghost">Ghost</option>
+            <option value="verified">verified</option>
+            <option value="complete_intact">complete intact</option>
+            <option value="dispersed">dispersed</option>
+            <option value="unconfirmed">unconfirmed</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="artists">Artists (comma-separated)</label>
+          <label for="workType">Work Type</label>
+          <select id="workType" required>
+            <option value="interior_page">interior_page</option>
+            <option value="splash">splash</option>
+            <option value="spread">spread</option>
+            <option value="cover">cover</option>
+            <option value="pinup">pinup</option>
+            <option value="thumbnail">thumbnail</option>
+            <option value="complete_story">complete_story</option>
+            <option value="complete_book">complete_book</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="artists">Creator Names (comma-separated)</label>
           <input type="text" id="artists" required />
         </div>
         <div class="form-group">
-          <label for="description">Description</label>
-          <textarea id="description" required></textarea>
+          <label for="description">General Commentary</label>
+          <textarea id="description"></textarea>
         </div>
         <div class="form-group">
-          <label for="provenance">Provenance Records (One per line: <code>Label | URL</code> or just <code>Label</code>)</label>
-          <textarea id="provenance" rows="5" placeholder="Heritage Sale Lot 91015 | https://comics.ha.com/...&#10;Christie's 1993 Lot 349"></textarea>
-          <div class="help-txt">Format: <code>Text Description | Optional URL</code> on each line</div>
+          <label for="isBackupStory">Backup Story</label>
+          <input type="checkbox" id="isBackupStory" />
+        </div>
+        <div class="form-group">
+          <label for="provenance">Provenance Ledger Lines (One per line: <code>Note | URL</code> or just <code>Note</code>)</label>
+          <textarea id="provenance" rows="5" placeholder="Heritage Sale Lot 91015 | https://comics.ha.com/...&#10;Private collection note"></textarea>
+          <div class="help-txt">Each line is stored as an <code>exhibition</code> event with placeholder date <code>1900-01-01</code>.</div>
         </div>
         <div class="modal-footer">
           <button type="button" class="secondary" id="cancel-btn">Cancel</button>

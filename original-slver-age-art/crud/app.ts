@@ -1,14 +1,23 @@
-import { ArtCensusEntry, ArtStatus, ProvenanceRecord } from './types.js';
+import {
+  ComicArtPage,
+  SurvivalStatus,
+  formatSurvivalStatus,
+  parseComicArtPages,
+  parseProvenanceLines,
+  provenanceLinesFromLedger,
+} from './types.js';
 
 const UNDO_STACK_KEY = 'silver_age_census_undo_stack';
 const MAX_UNDO_DEPTH = 30;
+const SCHEMA_VERSION = '1.1.0';
+const DEFAULT_PUBLISHER = 'Marvel Comics';
 
 class CensusApp {
-  private data: ArtCensusEntry[] = [];
+  private data: ComicArtPage[] = [];
   private fileHandle: FileSystemFileHandle | null = null;
   private searchQuery: string = '';
   private statusFilter: string = '';
-  private undoStack: ArtCensusEntry[][] = [];
+  private undoStack: ComicArtPage[][] = [];
 
   constructor() {
     this.initUndoStack();
@@ -36,15 +45,11 @@ class CensusApp {
       const text = await file.text();
       const parsed = JSON.parse(text);
 
-      if (Array.isArray(parsed)) {
-        this.data = parsed;
-        this.undoStack = [];
-        this.saveUndoStack();
-        this.updateFileStatusBadge(file.name);
-        this.render();
-      } else {
-        alert('Invalid format: Root of JSON must be an array.');
-      }
+      this.data = parseComicArtPages(parsed);
+      this.undoStack = [];
+      this.saveUndoStack();
+      this.updateFileStatusBadge(file.name);
+      this.render();
     } catch (err: any) {
       if (err.name !== 'AbortError') {
         console.error('File Open Error:', err);
@@ -79,7 +84,12 @@ class CensusApp {
     const raw = localStorage.getItem(UNDO_STACK_KEY);
     if (raw) {
       try {
-        this.undoStack = JSON.parse(raw);
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) {
+          this.undoStack = parsed.map((snapshot) => parseComicArtPages(snapshot));
+        } else {
+          this.undoStack = [];
+        }
       } catch {
         this.undoStack = [];
       }
@@ -123,67 +133,73 @@ class CensusApp {
   // ==========================
   // Operations & CRUD
   // ==========================
-  private sortData(entries: ArtCensusEntry[]): ArtCensusEntry[] {
+  private sortData(entries: ComicArtPage[]): ComicArtPage[] {
     return [...entries].sort((a, b) => {
-      const titleCmp = a.seriesTitle.localeCompare(b.seriesTitle);
+      const titleCmp = a.publicationTarget.seriesTitle.localeCompare(b.publicationTarget.seriesTitle);
       if (titleCmp !== 0) return titleCmp;
-      const numA = a.issueNumbers[0] ?? 0;
-      const numB = b.issueNumbers[0] ?? 0;
-      return numA - numB;
+      return a.publicationTarget.issueNumber - b.publicationTarget.issueNumber;
     });
   }
 
   private async handleFormSubmit(e: Event): Promise<void> {
     e.preventDefault();
 
-    const id = (document.getElementById('entry-id') as HTMLInputElement).value;
+    const urn = (document.getElementById('entry-id') as HTMLInputElement).value;
     const seriesTitle = (document.getElementById('seriesTitle') as HTMLInputElement).value.trim();
-    const issueDisplay = (document.getElementById('issueDisplay') as HTMLInputElement).value.trim();
-    const issueNumsRaw = (document.getElementById('issueNumbers') as HTMLInputElement).value;
-    const status = (document.getElementById('status') as HTMLSelectElement).value as ArtStatus;
+    const issueNumberRaw = (document.getElementById('issueNumber') as HTMLInputElement).value.trim();
+    const storyPageNumbersRaw = (document.getElementById('storyPageNumbers') as HTMLInputElement).value;
+    const status = (document.getElementById('status') as HTMLSelectElement).value as SurvivalStatus;
+    const workType = (document.getElementById('workType') as HTMLSelectElement)
+      .value as ComicArtPage['artDetails']['workType'];
     const artistsRaw = (document.getElementById('artists') as HTMLInputElement).value;
     const description = (document.getElementById('description') as HTMLTextAreaElement).value.trim();
     const provRaw = (document.getElementById('provenance') as HTMLTextAreaElement).value;
+    const isBackupStory = (document.getElementById('isBackupStory') as HTMLInputElement).checked;
 
-    const issueNumbers = issueNumsRaw
+    const issueNumber = Number.parseInt(issueNumberRaw, 10);
+    if (Number.isNaN(issueNumber)) {
+      alert('Issue Number must be a valid number.');
+      return;
+    }
+
+    const storyPageNumbers = storyPageNumbersRaw
       .split(',')
-      .map((n) => parseInt(n.trim(), 10))
-      .filter((n) => !isNaN(n));
+      .map((n) => Number.parseInt(n.trim(), 10))
+      .filter((n) => !Number.isNaN(n));
 
-    const artists = artistsRaw
+    const creators = artistsRaw
       .split(',')
       .map((a) => a.trim())
-      .filter(Boolean);
-
-    const provenance: ProvenanceRecord[] = provRaw
-      .split('\n')
-      .map((line) => line.trim())
       .filter(Boolean)
-      .map((line) => {
-        const parts = line.split('|').map((s) => s.trim());
-        if (parts.length >= 2) {
-          return { label: parts[0], url: parts.slice(1).join('|') };
-        }
-        return { label: parts[0] };
-      });
+      .map((name) => ({ name, role: 'pencils_and_inks' as const }));
 
-    const entryId = id || this.slugify(`${seriesTitle}-${issueDisplay}`);
+    const entryUrn = urn || this.createUrn(seriesTitle, issueNumber);
 
-    const newEntry: ArtCensusEntry = {
-      id: entryId,
-      seriesTitle,
-      issueDisplay,
-      issueNumbers,
-      status,
-      artists,
-      description,
-      provenance,
+    const newEntry: ComicArtPage = {
+      urn: entryUrn,
+      schemaVersion: SCHEMA_VERSION,
+      assetClass: 'original_art',
+      publicationTarget: {
+        publisher: DEFAULT_PUBLISHER,
+        seriesTitle,
+        issueNumber,
+        storyPageNumbers: storyPageNumbers.length > 0 ? storyPageNumbers : [1],
+        isBackupStory: isBackupStory || undefined,
+      },
+      artDetails: {
+        workType,
+        creators,
+      },
+      survivalStatus: status,
+      generalCommentary: description || undefined,
+      provenanceLedger: parseProvenanceLines(provRaw, entryUrn),
+      customMetadata: {},
     };
 
     this.pushUndoState();
 
-    if (id) {
-      const idx = this.data.findIndex((item) => item.id === id);
+    if (urn) {
+      const idx = this.data.findIndex((item) => item.urn === urn);
       if (idx !== -1) this.data[idx] = newEntry;
     } else {
       this.data.push(newEntry);
@@ -194,12 +210,16 @@ class CensusApp {
     this.render();
   }
 
-  private async deleteEntry(id: string): Promise<void> {
-    const target = this.data.find((e) => e.id === id);
+  private async deleteEntry(urn: string): Promise<void> {
+    const target = this.data.find((e) => e.urn === urn);
     if (!target) return;
-    if (confirm(`Delete ${target.seriesTitle} ${target.issueDisplay}?`)) {
+
+    const title = target.publicationTarget.seriesTitle;
+    const issue = target.publicationTarget.issueNumber;
+
+    if (confirm(`Delete ${title} #${issue}?`)) {
       this.pushUndoState();
-      this.data = this.data.filter((e) => e.id !== id);
+      this.data = this.data.filter((e) => e.urn !== urn);
       await this.syncToDisk();
       this.render();
     }
@@ -236,7 +256,6 @@ class CensusApp {
     // Keyboard Shortcuts
     window.addEventListener('keydown', (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 'z' && !e.shiftKey) {
-        // Prevent default undo if not typing in an input/textarea
         const tag = (document.activeElement as HTMLElement)?.tagName;
         if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
           e.preventDefault();
@@ -272,57 +291,64 @@ class CensusApp {
     tbody.innerHTML = '';
 
     const filtered = this.sortData(this.data).filter((item) => {
-      const matchesStatus = !this.statusFilter || item.status === this.statusFilter;
+      const matchesStatus = !this.statusFilter || item.survivalStatus === this.statusFilter;
+      const pageLabel = item.publicationTarget.storyPageNumbers.join(', ');
       const matchesSearch =
         !this.searchQuery ||
-        item.seriesTitle.toLowerCase().includes(this.searchQuery) ||
-        item.issueDisplay.toLowerCase().includes(this.searchQuery) ||
-        item.artists.some((a: string) => a.toLowerCase().includes(this.searchQuery)) ||
-        item.description.toLowerCase().includes(this.searchQuery);
+        item.publicationTarget.seriesTitle.toLowerCase().includes(this.searchQuery) ||
+        String(item.publicationTarget.issueNumber).includes(this.searchQuery) ||
+        pageLabel.toLowerCase().includes(this.searchQuery) ||
+        item.artDetails.creators.some((creator) => creator.name.toLowerCase().includes(this.searchQuery)) ||
+        (item.generalCommentary ?? '').toLowerCase().includes(this.searchQuery);
 
       return matchesStatus && matchesSearch;
     });
 
     filtered.forEach((entry) => {
       const tr = document.createElement('tr');
-      if (entry.status === 'Ghost') tr.classList.add('ghost-row');
+      if (entry.survivalStatus === 'unconfirmed') tr.classList.add('ghost-row');
 
-      const statusClass = `status-${entry.status.replace(/\s+/g, '-')}`;
+      const statusClass = `status-${entry.survivalStatus.replace(/_/g, '-')}`;
+      const series = entry.publicationTarget.seriesTitle;
+      const issue = `#${entry.publicationTarget.issueNumber}`;
+      const pageNumbers = entry.publicationTarget.storyPageNumbers.join(', ');
+      const statusText = formatSurvivalStatus(entry.survivalStatus);
 
-      const provenanceHtml = entry.provenance
-        .map((p: ProvenanceRecord) => {
-          if (p.url) {
-            return `<li><a href="${this.escapeHtml(p.url)}" target="_blank" rel="noopener">${this.escapeHtml(p.label)}</a></li>`;
+      const provenanceHtml = entry.provenanceLedger
+        .map((event) => {
+          const label = event.notes ?? `${event.eventType} (${event.date})`;
+          if (event.sourceLink) {
+            return `<li><a href="${this.escapeHtml(event.sourceLink)}" target="_blank" rel="noopener">${this.escapeHtml(label)}</a></li>`;
           }
-          return `<li>${this.escapeHtml(p.label)}</li>`;
+          return `<li>${this.escapeHtml(label)}</li>`;
         })
         .join('');
 
       tr.innerHTML = `
         <td>
-          <strong>${this.escapeHtml(entry.seriesTitle)}</strong><br />
-          <span style="color: var(--muted);">${this.escapeHtml(entry.issueDisplay)}</span>
+          <strong>${this.escapeHtml(series)}</strong><br />
+          <span style="color: var(--muted);">${this.escapeHtml(issue)} • Pages ${this.escapeHtml(pageNumbers)}</span>
         </td>
-        <td><span class="status-tag ${statusClass}">${this.escapeHtml(entry.status)}</span></td>
-        <td>${this.escapeHtml(entry.artists.join(', '))}</td>
-        <td>${this.escapeHtml(entry.description)}</td>
+        <td><span class="status-tag ${statusClass}">${this.escapeHtml(statusText)}</span></td>
+        <td>${this.escapeHtml(entry.artDetails.creators.map((creator) => creator.name).join(', '))}</td>
+        <td>${this.escapeHtml(entry.generalCommentary ?? '')}</td>
         <td><ul class="provenance-links">${provenanceHtml}</ul></td>
         <td>
           <div class="actions">
-            <button class="secondary" data-action="edit" data-id="${entry.id}">Edit</button>
-            <button class="danger" data-action="delete" data-id="${entry.id}">Delete</button>
+            <button class="secondary" data-action="edit" data-id="${entry.urn}">Edit</button>
+            <button class="danger" data-action="delete" data-id="${entry.urn}">Delete</button>
           </div>
         </td>
       `;
 
       tr.querySelector('[data-action="edit"]')?.addEventListener('click', () => this.openModal(entry));
-      tr.querySelector('[data-action="delete"]')?.addEventListener('click', () => this.deleteEntry(entry.id));
+      tr.querySelector('[data-action="delete"]')?.addEventListener('click', () => this.deleteEntry(entry.urn));
 
       tbody.appendChild(tr);
     });
   }
 
-  private openModal(entry?: ArtCensusEntry): void {
+  private openModal(entry?: ComicArtPage): void {
     const backdrop = document.getElementById('modal-backdrop') as HTMLDivElement;
     const title = document.getElementById('modal-title') as HTMLHeadingElement;
     const form = document.getElementById('census-form') as HTMLFormElement;
@@ -330,19 +356,24 @@ class CensusApp {
     form.reset();
 
     if (entry) {
-      title.textContent = `Edit ${entry.seriesTitle} ${entry.issueDisplay}`;
-      (document.getElementById('entry-id') as HTMLInputElement).value = entry.id;
-      (document.getElementById('seriesTitle') as HTMLInputElement).value = entry.seriesTitle;
-      (document.getElementById('issueDisplay') as HTMLInputElement).value = entry.issueDisplay;
-      (document.getElementById('issueNumbers') as HTMLInputElement).value = entry.issueNumbers.join(', ');
-      (document.getElementById('status') as HTMLSelectElement).value = entry.status;
-      (document.getElementById('artists') as HTMLInputElement).value = entry.artists.join(', ');
-      (document.getElementById('description') as HTMLTextAreaElement).value = entry.description;
-
-      const provLines = entry.provenance
-        .map((p: ProvenanceRecord) => (p.url ? `${p.label} | ${p.url}` : p.label))
-        .join('\n');
-      (document.getElementById('provenance') as HTMLTextAreaElement).value = provLines;
+      const issue = entry.publicationTarget.issueNumber;
+      title.textContent = `Edit ${entry.publicationTarget.seriesTitle} #${issue}`;
+      (document.getElementById('entry-id') as HTMLInputElement).value = entry.urn;
+      (document.getElementById('seriesTitle') as HTMLInputElement).value = entry.publicationTarget.seriesTitle;
+      (document.getElementById('issueNumber') as HTMLInputElement).value = String(issue);
+      (document.getElementById('storyPageNumbers') as HTMLInputElement).value =
+        entry.publicationTarget.storyPageNumbers.join(', ');
+      (document.getElementById('status') as HTMLSelectElement).value = entry.survivalStatus;
+      (document.getElementById('workType') as HTMLSelectElement).value = entry.artDetails.workType;
+      (document.getElementById('artists') as HTMLInputElement).value = entry.artDetails.creators
+        .map((creator) => creator.name)
+        .join(', ');
+      (document.getElementById('description') as HTMLTextAreaElement).value = entry.generalCommentary ?? '';
+      (document.getElementById('isBackupStory') as HTMLInputElement).checked =
+        entry.publicationTarget.isBackupStory === true;
+      (document.getElementById('provenance') as HTMLTextAreaElement).value = provenanceLinesFromLedger(
+        entry.provenanceLedger
+      );
     } else {
       title.textContent = 'Add New Entry';
       (document.getElementById('entry-id') as HTMLInputElement).value = '';
@@ -354,6 +385,11 @@ class CensusApp {
   private closeModal(): void {
     const backdrop = document.getElementById('modal-backdrop') as HTMLDivElement;
     backdrop.classList.remove('open');
+  }
+
+  private createUrn(seriesTitle: string, issueNumber: number): string {
+    const slug = this.slugify(`${seriesTitle}-${issueNumber}`);
+    return `urn:altasset:original_art:marvel-silver-age:${slug}:1`;
   }
 
   private slugify(text: string): string {
