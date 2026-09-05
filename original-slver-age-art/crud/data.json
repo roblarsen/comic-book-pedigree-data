@@ -1,1515 +1,3542 @@
 [
   {
-    "id": "daredevil-1",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#1",
-    "issueNumbers": [1],
-    "status": "Verified",
-    "description": "Origin Story: Consecutive Twice-Up Pages 8 & 9 depicting Matt Murdock saving the blind pedestrian and losing his sight.",
-    "artists": ["Bill Everett", "Jack Kirby", "Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Heritage Auctions Sale 807 Lot 9311",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/bill-everett-original-art-for-daredevil-1-pages-8-and-9-marvel-1964-though-best-known-for-his-work-on-sub-mariner-b/a/807-9311.s"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-2",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#2",
-    "issueNumbers": [2],
-    "status": "Ghost",
-    "description": "1st Electro battle; zero physical interior production art boards have surfaced in public records or registries.",
-    "artists": ["Joe Orlando", "Vince Colletta"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-3",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#3",
-    "issueNumbers": [3],
-    "status": "Verified",
-    "description": "1st Appearance of the Owl: Page 3; Page 19; Page 20; Page 21.",
-    "artists": ["Joe Orlando", "Vince Colletta"],
-    "provenance": [
-      {
-        "label": "Heritage Auctions"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-4",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#4",
-    "issueNumbers": [4],
-    "status": "Verified",
-    "description": "1st Killgrave / Purple Man: Page 13; Page 19 (Killgrave origin).",
-    "artists": ["Joe Orlando", "Vince Colletta"],
-    "provenance": [
-      {
-        "label": "Heritage Auctions"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-5",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#5",
-    "issueNumbers": [5],
-    "status": "Verified",
-    "description": "1st Matador & Wally Wood debut: Page 2; Page 9; Page 18; Pin-Up Illustration.",
-    "artists": ["Wally Wood"],
-    "provenance": [
-      {
-        "label": "Pages 2, 18: Heritage Auctions"
-      },
-      {
-        "label": "Page 9 (HA Sale 7462 Lot 92168)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/wally-wood-daredevil-5-story-page-9-original-art-marvel-1964-/a/7462-92168.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Pin-Up Illustration (HA Sale 7399 Lot 92015)",
-        "url": "https://comics.ha.com/itm/original-comic-art/splash-pages/wally-wood-daredevil-5-pin-up-illustration-original-art-marvel-1964-/a/7399-92015.s"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-6",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#6",
-    "issueNumbers": [6],
-    "status": "Verified",
-    "description": "1st Fellowship of Fear / Mr. Fear: Page 2 (Ox & Eel); Page 3; Page 6.",
-    "artists": ["Wally Wood"],
-    "provenance": [
-      {
-        "label": "Page 2 (HA Sale 7087 Lot 92214)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-daredevil-6-ox-and-eel-page-2-original-art-marvel-1965-/a/7087-92214.s"
-      },
-      {
-        "label": "Page 3: Heritage Auctions"
-      },
-      {
-        "label": "Page 6 (HA Sale 7209 Lot 93234)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-daredevil-6-story-page-6-original-art-marvel-1965-/a/7209-93234.s"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-7",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#7",
-    "issueNumbers": [7],
-    "status": "Verified",
-    "description": "1st Red Costume & Sub-Mariner battle: Page 7; complete layout thumbnails for Page 9 & Page 20.",
-    "artists": ["Wally Wood"],
-    "provenance": [
-      {
-        "label": "Page 7 Battle (HA Sale 7017 Lot 94247)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-and-bob-powell-daredevil-9-story-page-17-original-art-marvel-1965-/a/7204-93171.s"
-      },
-      {
-        "label": "Page 9 Thumbnail (CAF Piece 1415135)",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1415135"
-      },
-      {
-        "label": "Page 20 Thumbnail (CAF Piece 1415139)",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1415139"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-8",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#8",
-    "issueNumbers": [8],
-    "status": "Verified",
-    "description": "Origin & 1st Stilt-Man: Page 12; Page 15 (Wilbur Day origin).",
-    "artists": ["Wally Wood"],
-    "provenance": [
-      {
-        "label": "Page 12 (CAF Piece 2158286)",
-        "url": "https://www.comicartfans.com/bestofpiece.asp?piece=2158286"
-      },
-      {
-        "label": "Page 15 (HA Sale 7438 Lot 96321)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/wally-wood-daredevil-8-story-page-15-original-art-marvel-1965-/a/7438-96321.s"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-9",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#9",
-    "issueNumbers": [9],
-    "status": "Verified",
-    "description": "1st Organizer & Ani-Men: Page 10; Page 16; Page 17.",
-    "artists": ["Bob Powell", "Wally Wood"],
-    "provenance": [
-      {
-        "label": "Page 10: HA Sale 7093 Lot 92146"
-      },
-      {
-        "label": "Page 16: Heritage Auctions"
-      },
-      {
-        "label": "Page 17 (HA Sale 7204 Lot 93171)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-and-bob-powell-daredevil-9-story-page-17-original-art-marvel-1965-/a/7204-93171.s"
-      }
-    ]
-  },
-  {
-    "id": "daredevil-10",
-    "seriesTitle": "Daredevil",
-    "issueDisplay": "#10",
-    "issueNumbers": [10],
-    "status": "Verified",
-    "description": "Ani-Men finale: Title Splash Page 1; Page 14; Page 15; Page 19.",
-    "artists": ["Bob Powell", "Wally Wood"],
-    "provenance": [
-      {
-        "label": "Splash Page 1 & Page 19: HA Sale 7341"
-      },
-      {
-        "label": "Page 14 (HA Sale 7166 Lot 92202)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/bob-powell-and-wally-wood-daredevil-10-story-page-14-original-art-marvel-1965-/a/7166-92202.s"
-      },
-      {
-        "label": "Page 15 (HA Sale 7209 Lot 93189)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/bob-powell-and-wally-wood-daredevil-10-story-page-15-original-art-marvel-1965-/a/7209-93189.s"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-1-2-4-6-8",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#1, #2, #4, #6, #8",
-    "issueNumbers": [1, 2, 4, 6, 8],
-    "status": "Ghost",
-    "description": "Zero publicly verified interior production art boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-3",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#3",
-    "issueNumbers": [3],
-    "status": "Verified",
-    "description": "Interior story pages with Stan Lee reverse-side layout notes. Page 23 added.",
-    "artists": ["Jack Kirby", "Sol Brodsky"],
-    "provenance": [
-      {
-        "label": "Grail Comics",
-        "url": "https://grailcomics.com/fantastic-four-beginnings"
-      },
-      {
-        "label": "Page 23: ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-5",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#5",
-    "issueNumbers": [5],
-    "status": "Verified",
-    "description": "Page 12; Page 22.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1461"
-      },
-      {
-        "label": "Christie's 1993 Lot 143"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-7",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#7",
-    "issueNumbers": [7],
-    "status": "Verified",
-    "description": "Page 11; Page 22.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Christie's 1993 Lot 349"
-      },
-      {
-        "label": "Page 22 (HA Lot 910702006)",
-        "url": "https://comics.ha.com/itm/jack-kirby-and-dick-ayers-fantastic-four-7-story-page-22-original-art-marvel-1962-pages-from-the-first-ten/i/910702006.s?ic4=ListView-Thumbnail-071515"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-9",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#9",
-    "issueNumbers": [9],
-    "status": "Verified",
-    "description": "Page 1 Title Splash; Page 6.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1466"
-      },
-      {
-        "label": "Greg Manning Apr 2000 Lot 1474"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-10",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#10",
-    "issueNumbers": [10],
-    "status": "Verified",
-    "description": "Page 7.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1472"
-      }
-    ]
-  },
-  {
-    "id": "fantastic-four-12",
-    "seriesTitle": "Fantastic Four",
-    "issueDisplay": "#12",
-    "issueNumbers": [12],
-    "status": "Verified",
-    "description": "Page 16.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Sotheby's 1991 Lot 294"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-83",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#83",
-    "issueNumbers": [83],
-    "status": "Backup Only",
-    "description": "Backup Story Splash Page 1.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "HA Lot 92071",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-journey-into-mystery-83-splash-page-1-original-art-marvel-1962-/a/7007-92071.s"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-84",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#84",
-    "issueNumbers": [84],
-    "status": "Verified",
-    "description": "Page 3; Page 12; Backup Story Splash.",
-    "artists": ["Jack Kirby", "Dick Ayers", "Joe Sinnott", "Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Page 3 (CAF 646389)",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=646389"
-      },
-      {
-        "label": "Page 12 (Grail Comics Exhibit)",
-        "url": "https://grailcomics.com/beginnings-of-thor"
-      },
-      {
-        "label": "Backup Splash: Sotheby's 1997 Lot 403"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-85",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#85",
-    "issueNumbers": [85],
-    "status": "Verified",
-    "description": "Page 4.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "HA Lot 92168",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-85-page-4-original-art-marvel-1962-/a/7097-92168.s?ic4=ListView-ShortDescription-071515"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-86",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#86",
-    "issueNumbers": [86],
-    "status": "Verified",
-    "description": "Page 10; Complete Book.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 2051954",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=2051954"
-      },
-      {
-        "label": "Sotheby's 1995 Lot 889"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-87",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#87",
-    "issueNumbers": [87],
-    "status": "Verified",
-    "description": "Page 8.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "ComicBookInvest Market Reports ($31,000 June 2017)",
-        "url": "https://comicbookinvest.com/2017/06/23/market-report-june-2017-comicconnect-event-auction-part-1-jack-kirby/"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-88",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#88",
-    "issueNumbers": [88],
-    "status": "Complete",
-    "description": "Complete 13-Page Lead Story ('The Vengeance of Loki!') dispersed at Heritage Sale 7039 (August 2011).",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Splash Page 1 (HA 7039: 92167)",
-        "url": "http://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-splash-page-1-original-art/a/7039-92167.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 2 (HA 7039: 92168)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-2-original-art-marvel-/a/7039-92168.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 3 (HA 7039: 92169)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-3-original-art-marvel-/a/7039-92169.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 4 (HA 7039: 92170)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-4-original-art-marvel-/a/7039-92170.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 5 (HA 7039: 92171)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-5-original-art-marvel-/a/7039-92171.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 6 (HA 7039: 92172)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-6-original-art-marvel-/a/7039-92172.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 7 (HA 7039: 92173)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-7-original-art-marvel-/a/7039-92173.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 8 (HA 7039: 92174)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-8-original-art-marvel-/a/7039-92174.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 9 (HA 7039: 92175)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-9-original-art-marvel-/a/7039-92175.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 10 (HA 7039: 92176)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-10-original-art-marvel-/a/7039-92176.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 11 (HA 7039: 92177)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-11-original-art-marvel-/a/7039-92177.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 12 (HA 7039: 92178)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-12-original-art-marvel-/a/7039-92178.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 13 (HA 7039: 92179)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-13-original-art-marvel-/a/7039-92179.s?ic4=GalleryView-Thumbnail-071515#"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-89",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#89",
-    "issueNumbers": [89],
-    "status": "Verified",
-    "description": "Page 3; Page 13.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Page 3 (CAF 1596666)",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1596666"
-      },
-      {
-        "label": "Page 13: ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "journey-into-mystery-90-91-92",
-    "seriesTitle": "Journey into Mystery",
-    "issueDisplay": "#90, #91, #92",
-    "issueNumbers": [90, 91, 92],
-    "status": "Ghost",
-    "description": "Zero publicly verified interior production art boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-101",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#101",
-    "issueNumbers": [101],
-    "status": "Complete",
-    "description": "Complete 13-Page Lead Story ('The Human Torch') — Pages 1–13.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Page 1 (HA 7234: 91014)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-1-human-torch-original-art-marvel-1962-/a/7234-91014.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Pages 2 & 3 (HA 7231: 91018)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-pages-2-3-fantastic-four-origin-recap-original-art-marvel-1962-/a/7231-91018.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 4 (HA 7234: 94045)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-4-original-art-marvel-1962-/a/7234-94045.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 5 (HA 7236: 94079)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-5-human-torch-original-art-marvel-1962-/a/7236-94079.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 6 (HA 7234: 94046)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-6-original-art-marvel-1962-/a/7234-94046.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 7 (HA 7231: 94066)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-story-page-7-original-art-marvel-1962-/a/7231-94066.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 8 (HA 7236: 94080)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-8-human-torch-original-art-marvel-1962-/a/7236-94080.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 9 (HA 7231: 94067)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-story-page-9-human-torch-original-art-marvel-1962-/a/7231-94067.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 10 (HA 7234: 94047)",
-        "url": "http://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-10-original-art-marvel-1962-/a/7234-94047.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 11 (HA 7236: 94081)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-11-human-torch-original-art-marvel-1962-/a/7236-94081.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 12 (HA 7236: 94082)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-12-human-torch-original-art-marvel-1962-/a/7236-94082.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 13 (HA 7239: 94049)",
-        "url": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-13-human-torch-original-art-marvel-1962-/a/7239-94049.s?ic4=GalleryView-Thumbnail-071515#"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-102",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#102",
-    "issueNumbers": [102],
-    "status": "Verified",
-    "description": "Page 2; Page 5; Page 6; Page 8.",
-    "artists": ["Gene Colan", "Dick Ayers", "Jack Kirby"],
-    "provenance": [
-      {
-        "label": "CAF 1818036",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1818036"
-      },
-      {
-        "label": "Sotheby's 1996 Lot 687"
-      },
-      {
-        "label": "Christie's 1997 Lot 186"
-      },
-      {
-        "label": "Page 8: ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-103",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#103",
-    "issueNumbers": [103],
-    "status": "Verified",
-    "description": "Page 8.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 1394963",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1394963"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-104",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#104",
-    "issueNumbers": [104],
-    "status": "Verified",
-    "description": "Page 2; Page 4.",
-    "artists": ["Jack Kirby", "Dick Ayers", "Steve Ditko"],
-    "provenance": [
-      {
-        "label": "HA Lot 94097",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-104-story-page-2-original-art-marvel-1963-/a/7224-94097.s"
-      },
-      {
-        "label": "HA Lot 32005",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-original-art-for-strange-tales-104-page-4-marvel-1962-you-can-t-ask-for-a-crazier-premise-than-what-you-/a/12121-32005.s"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-105",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#105",
-    "issueNumbers": [105],
-    "status": "Verified",
-    "description": "Page 11.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Christie's 1993 Lot 236"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-106",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#106",
-    "issueNumbers": [106],
-    "status": "Verified",
-    "description": "Page 1 Title Splash.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Sell My Comic Art Archives",
-        "url": "https://www.sellmycomicart.com/dick-ayers-art.html"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-107",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#107",
-    "issueNumbers": [107],
-    "status": "Ghost",
-    "description": "Zero verified production boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-108",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#108",
-    "issueNumbers": [108],
-    "status": "Verified",
-    "description": "Page 1 Title Splash; Page 3.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Page 1 Splash (HA 7136: 92270)",
-        "url": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-dick-ayers-strange-tales-108-splash-page-1-fantastic-four-original-art-marvel-1963-/a/7136-92270.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Page 3 (HA 7152: 92125)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-108-the-painter-of-a-thousand-perils-page-3-human-torch-original-art/a/7152-92125.s?ic4=GalleryView-Thumbnail-071515#"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-109",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#109",
-    "issueNumbers": [109],
-    "status": "Verified",
-    "description": "Page 2.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 1423164",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1423164"
-      }
-    ]
-  },
-  {
-    "id": "strange-tales-110",
-    "seriesTitle": "Strange Tales",
-    "issueDisplay": "#110",
-    "issueNumbers": [110],
-    "status": "Ghost",
-    "description": "1st Doctor Strange; zero physical production boards from Ditko's 5-page story have surfaced.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-39",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#39",
-    "issueNumbers": [39],
-    "status": "Verified",
-    "description": "Complete 13-Page Origin Story; Page 1 Title Splash; Page 7.",
-    "artists": ["Don Heck", "Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Sotheby's 1996",
-        "url": "https://itsalljustcomics.com/2026/07/01/graham-nash-sothebys-1996-the-iron-man-origin-art-secret-46k-for-the-whole-story/"
-      },
-      {
-        "label": "Heritage Auctions July 2026",
-        "url": "https://puck.news/newsletter_content/paul-klees-angels-sothebys-44b-semester/"
-      },
-      {
-        "label": "HA Lot 92016",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/don-heck-tales-of-suspense-39-story-page-7-first-appearance-of-iron-man-original-art-marvel-/a/7413-92016.s"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-40",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#40",
-    "issueNumbers": [40],
-    "status": "Ghost",
-    "description": "Zero physical original interior art boards.",
-    "artists": ["Jack Kirby", "Don Heck"],
-    "provenance": [
-      {
-        "label": "Grail Comics",
-        "url": "https://grailcomics.com/beginnings-of-iron-man"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-41",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#41",
-    "issueNumbers": [41],
-    "status": "Verified",
-    "description": "Backup Story Interior Page.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "CAF 31328",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=31328"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-42",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#42",
-    "issueNumbers": [42],
-    "status": "Verified",
-    "description": "Complete Book (13-page Iron Man story + backup stories).",
-    "artists": ["Don Heck"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1496"
-      },
-      {
-        "label": "Grail Comics Private Collection",
-        "url": "https://grailcomics.com/private-collection"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-43",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#43",
-    "issueNumbers": [43],
-    "status": "Verified",
-    "description": "Backup Story Page 1 2-up Title Splash.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "CAF 1137667",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1137667"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-44",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#44",
-    "issueNumbers": [44],
-    "status": "Verified",
-    "description": "Title Splash Page.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Christie's 1997 Lot 297"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-45",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#45",
-    "issueNumbers": [45],
-    "status": "Verified",
-    "description": "Early Twice-Up Interior Story Page.",
-    "artists": ["Don Heck"],
-    "provenance": [
-      {
-        "label": "CAF 1916931",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1916931"
-      },
-      {
-        "label": "CAF 1942872",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1942872"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-46-47",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#46, #47",
-    "issueNumbers": [46, 47],
-    "status": "Ghost",
-    "description": "Zero physical production boards publicly documented.",
-    "artists": ["Jack Kirby", "Don Heck", "Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "tales-of-suspense-48",
-    "seriesTitle": "Tales of Suspense",
-    "issueDisplay": "#48",
-    "issueNumbers": [48],
-    "status": "Verified",
-    "description": "1st Red and Gold Armor: Page 3; Page 14; Page 15; Page 16.",
-    "artists": ["Steve Ditko", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 639304",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=639304"
-      },
-      {
-        "label": "CAF 567191",
-        "url": "https://www.comicartfans.com/GalleryPieceAsLike.asp?Piece=567191"
-      },
-      {
-        "label": "CAF 2119282",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=2119282"
-      },
-      {
-        "label": "CAF 10787659",
-        "url": "https://www.comicartfans.com/forsaledetails.asp?artid=10787659"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-27",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#27",
-    "issueNumbers": [27],
-    "status": "Verified",
-    "description": "Complete Book including 1st Henry Pym story 'The Man in the Ant Hill!'.",
-    "artists": ["Jack Kirby", "Don Heck", "Bob Forgione", "Steve Ditko"],
-    "provenance": [
-      {
-        "label": "HA Lot 5990",
-        "url": "https://comics.ha.com/itm/original-comic-art/complete-story/jack-kirby-don-heck-bob-forgione-steve-ditko-original-art-for-tales-to-astonish-27-complete-book-marvel-1961-it-is-rare-that/a/803-5990.s?ic4=GalleryView-ShortDescription-071515"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-35-41-43",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#35, #41, #43",
-    "issueNumbers": [35, 41, 43],
-    "status": "Ghost",
-    "description": "Zero verified interior production boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-36",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#36",
-    "issueNumbers": [36],
-    "status": "Verified",
-    "description": "Complete Book; Backup Story Page 4.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Christie's 1992 Lot 118"
-      },
-      {
-        "label": "Backup Page 4 (HA 7076: 92145)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-tales-to-astonish-36-page-4-original-art-marvel-1962-/a/7076-92145.s#"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-37",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#37",
-    "issueNumbers": [37],
-    "status": "Verified",
-    "description": "Page 9.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Comic Art Fans Registry",
-        "url": "https://www.comicartfans.com/searchresult.asp?w=1&txtSearch=dick+ayers+dick+ayers&Order&pm=3"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-38",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#38",
-    "issueNumbers": [38],
-    "status": "Complete",
-    "description": "Complete 8-Page Story (Backup).",
-    "artists": ["Don Heck"],
-    "provenance": [
-      {
-        "label": "Heritage Auctions Lot 3309",
-        "url": "https://comics.ha.com/itm/original-comic-art/complete-story/don-heck-tales-to-astonish-38-complete-8-page-story-i-found-the-impossible-world-original-art-marvel-1962-a-tale-about-greed-/a/815-3309.s?ic4=GalleryView-Thumbnail-071515"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-39",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#39",
-    "issueNumbers": [39],
-    "status": "Verified",
-    "description": "Page 1 Title Splash.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 1290094",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1290094"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-40",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#40",
-    "issueNumbers": [40],
-    "status": "Verified",
-    "description": "End Page.",
-    "artists": ["Jack Kirby", "Sol Brodsky"],
-    "provenance": [
-      {
-        "label": "CAF 1343867",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1343867"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-42",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#42",
-    "issueNumbers": [42],
-    "status": "Verified",
-    "description": "Page 10.",
-    "artists": ["Don Heck"],
-    "provenance": [
-      {
-        "label": "CAF 1464587",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1464587"
-      }
-    ]
-  },
-  {
-    "id": "tales-to-astonish-44",
-    "seriesTitle": "Tales to Astonish",
-    "issueDisplay": "#44",
-    "issueNumbers": [44],
-    "status": "Verified",
-    "description": "Page 17 (1st Wasp appearance).",
-    "artists": ["Jack Kirby", "Don Heck"],
-    "provenance": [
-      {
-        "label": "ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-1-5",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#1–#5",
-    "issueNumbers": [1, 2, 3, 4, 5],
-    "status": "Ghost",
-    "description": "Zero publicly verified Steve Ditko interior production boards.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-6",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#6",
-    "issueNumbers": [6],
-    "status": "Verified",
-    "description": "Page 5; Page 6; Page 13; Page 21.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Page 5 (HA 830: 92186)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-6-page-5-original-art-marvel-1963-/a/830-92186.s?ic4=ListView-Thumbnail-071515#"
-      },
-      {
-        "label": "Sotheby's 1993 Lot 62 & CAF 1137338",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1137338"
-      },
-      {
-        "label": "Page 13: Sotheby's 1997 Lot 629"
-      },
-      {
-        "label": "Page 21 (HA 7418: 92005)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-the-amazing-spider-man-6-story-page-21-original-art-marvel-1963-/a/7418-92005.s?ic4=ListView-ShortDescription-071515"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-7",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#7",
-    "issueNumbers": [7],
-    "status": "Verified",
-    "description": "Page 9; Page 12 (Vulture).",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Page 9 (HA 7224: 91015)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-7-story-page-9-original-art-marvel-1963-/a/7224-91015.s?ic4=ListView-ShortDescription-071515#"
-      },
-      {
-        "label": "Page 12 (HA 7023: 93081)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-7-vulture-page-12-original-art-marvel-1963-/a/7023-93081.s?ic4=ListView-ShortDescription-071515#"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-8",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#8",
-    "issueNumbers": [8],
-    "status": "Verified",
-    "description": "Complete 22-Page Book; 6-Page Secondary Story; Page 2; Page 3; Back Story Title Splash; Back Story Page 6.",
-    "artists": ["Steve Ditko", "Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Complete 22-Page / 6-Page Backup: Christie's 1996 / 1997"
-      },
-      {
-        "label": "Page 2 (HA 7384: 92006)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-the-amazing-spider-man-8-story-page-2-original-art-marvel-1964-/a/7384-92006.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Page 3 (HA 7341: 93024)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-amazing-spider-man-8-story-page-3-original-art-marvel-1964-/a/7341-93024.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Back Story Splash 1 (HA 7002: 92137)",
-        "url": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-steve-ditko-amazing-spider-man-8-splash-page-1-spider-man-tackles-the-torch-original-art-marvel-/a/7002-92137.s?ic4=ListView-ShortDescription-071515#"
-      },
-      {
-        "label": "Back Story Page 6 (HA 7021: 92131)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-steve-ditko-amazing-spider-man-8-spider-man-tackles-the-torch-page-6-original-art-marvel-1964-/a/7021-92131.s?ic4=ListView-ShortDescription-071515"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-9",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#9",
-    "issueNumbers": [9],
-    "status": "Verified",
-    "description": "Page 2; Page 19.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Sotheby's 1997 Lot 404"
-      },
-      {
-        "label": "Sotheby's 1991 Lot 285"
-      }
-    ]
-  },
-  {
-    "id": "amazing-spider-man-10",
-    "seriesTitle": "The Amazing Spider-Man",
-    "issueDisplay": "#10",
-    "issueNumbers": [10],
-    "status": "Verified",
-    "description": "Page 17; Complete 22-Page Story Block.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Page 17 (HA 7007: 94054)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-10-page-17-original-art-marvel-1964-/a/7007-94054.s"
-      },
-      {
-        "label": "Complete Story (HA 803: 5859)",
-        "url": "https://comics.ha.com/itm/original-comic-art/complete-story/steve-ditko-original-art-for-amazing-spider-man-10-complete-22-page-story-marvel-1964-in-1962-stan-lee-created-a-new-vision-for-a/a/803-5859.s?ic4=ListView-ShortDescription-071515#"
-      }
-    ]
-  },
-  {
-    "id": "avengers-1",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#1",
-    "issueNumbers": [1],
-    "status": "Verified",
-    "description": "Page 2; Page 6; Page 12; Page 15; Page 16; Page 19; Page 20; Page 21; Page 22. (9 Pages Total Verified).",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Page 2 (HA 7270: 91021)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-avengers-1-story-page-2-original-art-marvel-1963-/a/7270-91021.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Pages 6, 12: Greg Manning / Christie's"
-      },
-      {
-        "label": "Page 15 (HA 828: 42122)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-page-15-original-art-marvel-1963-/a/828-42122.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Page 16 (HA 829: 41439)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-page-16-original-art-marvel-1963-/a/829-41439.s?ic4=ListView-ShortDescription-071515#"
-      },
-      {
-        "label": "Page 19 (HA 7023: 93148)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-hulk-vs-iron-man-page-19-original-art-marvel-1963-/a/7023-93148.s?ic4=ListView-ShortDescription-071515#"
-      },
-      {
-        "label": "Page 20 (HA 803: 5958)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-original-art-for-avengers-1-page-20-marvel-1963-thor-is-featured-in-every-single-panel-of-this-twice-up/a/803-5958.s?ic4=ListView-ShortDescription-071515#"
-      },
-      {
-        "label": "Page 21 (HA 7244: 91031)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-avengers-1-story-page-21-original-art-marvel-1963-/a/7244-91031.s?ic4=ListView-ShortDescription-071515"
-      },
-      {
-        "label": "Page 22 (HA 803: 5959)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-original-art-for-avengers-1-page-22-marvel-1963-here-is-an-important-page-from-a-key-first-issue-as-loki/a/803-5959.s?ic4=ListView-ShortDescription-071515#"
-      }
-    ]
-  },
-  {
-    "id": "avengers-2",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#2",
-    "issueNumbers": [2],
-    "status": "Verified",
-    "description": "Page 1 Title Splash; Page 5; Page 6; Page 7; Page 14; Page 16; Page 19.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Christie's / Sotheby's Auctions (1993-1997)"
-      }
-    ]
-  },
-  {
-    "id": "avengers-3",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#3",
-    "issueNumbers": [3],
-    "status": "Verified",
-    "description": "Title Splash; Page 3; Page 6; Page 7; Page 8; Page 14; Page 17; Page 18.",
-    "artists": ["Jack Kirby", "Paul Reinman"],
-    "provenance": [
-      {
-        "label": "Splash, 3, 6, 7, 14, 17, 18: Sotheby's / Christie's / CAF 1809853",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1809853"
-      },
-      {
-        "label": "Page 8 (HA 803: 5962)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-paul-reinman-original-art-for-avengers-3-page-8-marvel-1964-we-ve-got-iron-man-in-action-giant-man-and-the-wasp/a/803-5962.s?ic4=ListView-Thumbnail-071515"
-      }
-    ]
-  },
-  {
-    "id": "avengers-4-9",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#4, #9",
-    "issueNumbers": [4, 9],
-    "status": "Ghost",
-    "description": "Zero publicly verified interior production art boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "avengers-5",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#5",
-    "issueNumbers": [5],
-    "status": "Verified",
-    "description": "Page 19.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Superworld / ComicLink Consignment Records"
-      }
-    ]
-  },
-  {
-    "id": "avengers-6",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#6",
-    "issueNumbers": [6],
-    "status": "Verified",
-    "description": "Pages 3 & 5; Page 9; Page 11; Page 12; Page 13; Page 14; Pages 18 & 22; Page 20; Pages 22 & 23.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "Christie's / Sotheby's / CAF 1887210",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1887210"
-      },
-      {
-        "label": "Page 3: ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "avengers-7",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#7",
-    "issueNumbers": [7],
-    "status": "Verified",
-    "description": "Page 5.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1515"
-      }
-    ]
-  },
-  {
-    "id": "avengers-8",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#8",
-    "issueNumbers": [8],
-    "status": "Verified",
-    "description": "Page 2.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "CAF 1868836",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1868836"
-      }
-    ]
-  },
-  {
-    "id": "avengers-10",
-    "seriesTitle": "The Avengers",
-    "issueDisplay": "#10",
-    "issueNumbers": [10],
-    "status": "Verified",
-    "description": "Captain America Pin-Up Page.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "Christie's 1993 Lot 395 & CAF 73822",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=73822"
-      }
-    ]
-  },
-  {
-    "id": "incredible-hulk-1-2",
-    "seriesTitle": "The Incredible Hulk",
-    "issueDisplay": "#1, #2",
-    "issueNumbers": [1, 2],
-    "status": "Ghost",
-    "description": "Zero publicly verified interior production art boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Grail Comics",
-        "url": "https://grailcomics.com/beginnings-of-hulk"
-      }
-    ]
-  },
-  {
-    "id": "incredible-hulk-3",
-    "seriesTitle": "The Incredible Hulk",
-    "issueDisplay": "#3",
-    "issueNumbers": [3],
-    "status": "Verified",
-    "description": "Page 10; Pages 19 & 20.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "ComicConnect Event Auction XXVI"
-      },
-      {
-        "label": "Grail Comics Census",
-        "url": "https://grailcomics.com/beginnings-of-hulk"
-      }
-    ]
-  },
-  {
-    "id": "incredible-hulk-4",
-    "seriesTitle": "The Incredible Hulk",
-    "issueDisplay": "#4",
-    "issueNumbers": [4],
-    "status": "Verified",
-    "description": "Pages 2 & 3; Pages 6 & 9; Page 7; Page 9.",
-    "artists": ["Jack Kirby", "Dick Ayers"],
-    "provenance": [
-      {
-        "label": "Pages 2, 3, 6, 7: Christie's / Sotheby's 1997"
-      },
-      {
-        "label": "Page 9 (HA 7436: 94005)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-incredible-hulk-4-story-page-9-original-art-marvel-1962-/a/7436-94005.s?ic4=ListView-Thumbnail-071515"
-      }
-    ]
-  },
-  {
-    "id": "incredible-hulk-5",
-    "seriesTitle": "The Incredible Hulk",
-    "issueDisplay": "#5",
-    "issueNumbers": [5],
-    "status": "Verified",
-    "description": "Title Splash; Page 3; Page 5; Page 7; Page 10; Page 13; Unspecified Interior Page.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning / Christie's / Sotheby's auctions (1993-2000)"
-      }
-    ]
-  },
-  {
-    "id": "incredible-hulk-6",
-    "seriesTitle": "The Incredible Hulk",
-    "issueDisplay": "#6",
-    "issueNumbers": [6],
-    "status": "Verified",
-    "description": "Page 18; Page 22.",
-    "artists": ["Steve Ditko"],
-    "provenance": [
-      {
-        "label": "Sotheby's 1996 Lot 661"
-      },
-      {
-        "label": "Christie's 1993 Lot 390"
-      }
-    ]
-  },
-  {
-    "id": "x-men-1",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#1",
-    "issueNumbers": [1],
-    "status": "Verified",
-    "description": "Complete Book verified intact (part of famous trade for complete FF #3). Includes Page 5.",
-    "artists": ["Jack Kirby", "Paul Reinman"],
-    "provenance": [
-      {
-        "label": "Page 5 (HA 7189: 92098)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-paul-reinman-x-men-1-story-page-5-original-art-marvel-1963-/a/7189-92098.s?ic4=GalleryView-Thumbnail-071515#"
-      },
-      {
-        "label": "Complete Book traded privately."
-      }
-    ]
-  },
-  {
-    "id": "x-men-2",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#2",
-    "issueNumbers": [2],
-    "status": "Verified",
-    "description": "Page 2; Page 6; Page 13.",
-    "artists": ["Jack Kirby", "Paul Reinman"],
-    "provenance": [
-      {
-        "label": "Artnet Archives",
-        "url": "https://www.artnet.com/artists/jack-kirby-and-paul-reinman/x-men-2-story-page-2-original-art-marvel-1963-0JldK5IRxQYkTBXFX_WLZw2"
-      },
-      {
-        "label": "CAF 2123842",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=2123842"
-      },
-      {
-        "label": "Page 13: ComicConnect Event Auction (June 2017)"
-      }
-    ]
-  },
-  {
-    "id": "x-men-3-6",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#3, #6",
-    "issueNumbers": [3, 6],
-    "status": "Ghost",
-    "description": "Zero publicly verified interior production art boards.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Unconfirmed"
-      }
-    ]
-  },
-  {
-    "id": "x-men-4",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#4",
-    "issueNumbers": [4],
-    "status": "Verified",
-    "description": "Title Splash Page 1.",
-    "artists": ["Jack Kirby", "Paul Reinman"],
-    "provenance": [
-      {
-        "label": "HA Lot 91019",
-        "url": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-paul-reinman-x-men-4-splash-page-original-art-marvel-1964-/a/7231-91019.s"
-      }
-    ]
-  },
-  {
-    "id": "x-men-5",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#5",
-    "issueNumbers": [5],
-    "status": "Verified",
-    "description": "Page 5.",
-    "artists": ["Jack Kirby"],
-    "provenance": [
-      {
-        "label": "Greg Manning Apr 2000 Lot 1542"
-      }
-    ]
-  },
-  {
-    "id": "x-men-7",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#7",
-    "issueNumbers": [7],
-    "status": "Verified",
-    "description": "Complete Interior Issue Art.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "Skirball Cultural Center Exhibition",
-        "url": "https://www.skirball.org/about/press/2025/skirball-cultural-center-presents-worldwide-debut-jack-kirby-heroes-and-humanity"
-      }
-    ]
-  },
-  {
-    "id": "x-men-8",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#8",
-    "issueNumbers": [8],
-    "status": "Verified",
-    "description": "Page 4.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "Nostalgic Investments",
-        "url": "https://www.nostalgicinvestments.com/comic-art/x-men-8-p4-large-art"
-      }
-    ]
-  },
-  {
-    "id": "x-men-9",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#9",
-    "issueNumbers": [9],
-    "status": "Verified",
-    "description": "Page 3.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "CAF 1960059",
-        "url": "https://www.comicartfans.com/gallerypiece.asp?piece=1960059"
-      }
-    ]
-  },
-  {
-    "id": "x-men-10",
-    "seriesTitle": "The X-Men",
-    "issueDisplay": "#10",
-    "issueNumbers": [10],
-    "status": "Verified",
-    "description": "Splash Page 1; Page 5; Page 10; Page 14; Page 18.",
-    "artists": ["Jack Kirby", "Chic Stone"],
-    "provenance": [
-      {
-        "label": "Splash Page 1 (HA 7192: 91020)",
-        "url": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-chic-stone-x-men-10-splash-page-1-ka-zar-and-zabu-original-art-marvel-1965-/a/7192-91020.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 5 (HA 7163: 93126)",
-        "url": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-chic-stone-x-men-10-story-page-5-original-art-marvel-1965-/a/7163-93126.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 10 (HA 7283: 94077)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-story-page-10-ka-zar-and-zabu-original-art-marvel-1965-/a/7283-94077.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 14 (HA 7436: 94106)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-savage-land-first-appearance-issue-story-page-14-original-art-marvel-1965-/a/7436-94106.s?ic4=GalleryView-Thumbnail-071515"
-      },
-      {
-        "label": "Page 18 (HA 7384: 92106)",
-        "url": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-story-page-18-ka-zar-original-art-marvel-1965-/a/7384-92106.s?ic4=GalleryView-Thumbnail-071515"
-      }
-    ]
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-1:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Bill Everett",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Origin Story: Consecutive Twice-Up Pages 8 & 9 depicting Matt Murdock saving the blind pedestrian and losing his sight.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-1:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Heritage Auctions Sale 807 Lot 9311",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/bill-everett-original-art-for-daredevil-1-pages-8-and-9-marvel-1964-though-best-known-for-his-work-on-sub-mariner-b/a/807-9311.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-2:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 2,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Joe Orlando",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Vince Colletta",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "1st Electro battle; zero physical interior production art boards have surfaced in public records or registries.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-2:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-3:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 3,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Joe Orlando",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Vince Colletta",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Appearance of the Owl: Page 3; Page 19; Page 20; Page 21.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-3:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Heritage Auctions"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-4:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 4,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Joe Orlando",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Vince Colletta",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Killgrave / Purple Man: Page 13; Page 19 (Killgrave origin).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-4:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Heritage Auctions"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 5,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Matador & Wally Wood debut: Page 2; Page 9; Page 18; Pin-Up Illustration.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Pages 2, 18: Heritage Auctions"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-5:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 (HA Sale 7462 Lot 92168)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/wally-wood-daredevil-5-story-page-9-original-art-marvel-1964-/a/7462-92168.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-5:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Pin-Up Illustration (HA Sale 7399 Lot 92015)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/splash-pages/wally-wood-daredevil-5-pin-up-illustration-original-art-marvel-1964-/a/7399-92015.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-6:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 6,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Fellowship of Fear / Mr. Fear: Page 2 (Ox & Eel); Page 3; Page 6.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-6:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 2 (HA Sale 7087 Lot 92214)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-daredevil-6-ox-and-eel-page-2-original-art-marvel-1965-/a/7087-92214.s"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-6:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3: Heritage Auctions"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-6:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 6 (HA Sale 7209 Lot 93234)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-daredevil-6-story-page-6-original-art-marvel-1965-/a/7209-93234.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-7:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 7,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Red Costume & Sub-Mariner battle: Page 7; complete layout thumbnails for Page 9 & Page 20.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-7:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 7 Battle (HA Sale 7017 Lot 94247)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-and-bob-powell-daredevil-9-story-page-17-original-art-marvel-1965-/a/7204-93171.s"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-7:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 Thumbnail (CAF Piece 1415135)",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1415135"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-7:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 20 Thumbnail (CAF Piece 1415139)",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1415139"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-8:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 8,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Origin & 1st Stilt-Man: Page 12; Page 15 (Wilbur Day origin).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-8:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 12 (CAF Piece 2158286)",
+        "sourceLink": "https://www.comicartfans.com/bestofpiece.asp?piece=2158286"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-8:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 15 (HA Sale 7438 Lot 96321)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/wally-wood-daredevil-8-story-page-15-original-art-marvel-1965-/a/7438-96321.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-9:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 9,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Bob Powell",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Organizer & Ani-Men: Page 10; Page 16; Page 17.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-9:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 10: HA Sale 7093 Lot 92146"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-9:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 16: Heritage Auctions"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-9:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 17 (HA Sale 7204 Lot 93171)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/wally-wood-and-bob-powell-daredevil-9-story-page-17-original-art-marvel-1965-/a/7204-93171.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:daredevil-10:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Daredevil",
+      "issueNumber": 10,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Bob Powell",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Wally Wood",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Ani-Men finale: Title Splash Page 1; Page 14; Page 15; Page 19.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-10:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Splash Page 1 & Page 19: HA Sale 7341"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-10:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 14 (HA Sale 7166 Lot 92202)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/bob-powell-and-wally-wood-daredevil-10-story-page-14-original-art-marvel-1965-/a/7166-92202.s"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:daredevil-10:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 15 (HA Sale 7209 Lot 93189)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/bob-powell-and-wally-wood-daredevil-10-story-page-15-original-art-marvel-1965-/a/7209-93189.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-1-2-4-6-8:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified interior production art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-1-2-4-6-8:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-3:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 3,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Sol Brodsky",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Interior story pages with Stan Lee reverse-side layout notes. Page 23 added.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-3:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Grail Comics",
+        "sourceLink": "https://grailcomics.com/fantastic-four-beginnings"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-3:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 23: ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 5,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 12; Page 22.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1461"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-5:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1993 Lot 143"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-7:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 7,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 11; Page 22.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-7:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1993 Lot 349"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-7:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 22 (HA Lot 910702006)",
+        "sourceLink": "https://comics.ha.com/itm/jack-kirby-and-dick-ayers-fantastic-four-7-story-page-22-original-art-marvel-1962-pages-from-the-first-ten/i/910702006.s?ic4=ListView-Thumbnail-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-9:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 9,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 1 Title Splash; Page 6.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-9:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1466"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-9:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1474"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-10:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 10,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 7.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-10:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1472"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:fantastic-four-12:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Fantastic Four",
+      "issueNumber": 12,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 16.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:fantastic-four-12:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1991 Lot 294"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-83:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 83,
+      "storyPageNumbers": [
+        1
+      ],
+      "isBackupStory": true
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Backup Story Splash Page 1.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-83:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 92071",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-journey-into-mystery-83-splash-page-1-original-art-marvel-1962-/a/7007-92071.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-84:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 84,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Joe Sinnott",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 3; Page 12; Backup Story Splash.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-84:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3 (CAF 646389)",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=646389"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-84:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 12 (Grail Comics Exhibit)",
+        "sourceLink": "https://grailcomics.com/beginnings-of-thor"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-84:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Backup Splash: Sotheby's 1997 Lot 403"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-85:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 85,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 4.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-85:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 92168",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-85-page-4-original-art-marvel-1962-/a/7097-92168.s?ic4=ListView-ShortDescription-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-86:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 86,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 10; Complete Book.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-86:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 2051954",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=2051954"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-86:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1995 Lot 889"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-87:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 87,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 8.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-87:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "ComicBookInvest Market Reports ($31,000 June 2017)",
+        "sourceLink": "https://comicbookinvest.com/2017/06/23/market-report-june-2017-comicconnect-event-auction-part-1-jack-kirby/"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 88,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "complete_intact",
+    "generalCommentary": "Complete 13-Page Lead Story ('The Vengeance of Loki!') dispersed at Heritage Sale 7039 (August 2011).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Splash Page 1 (HA 7039: 92167)",
+        "sourceLink": "http://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-splash-page-1-original-art/a/7039-92167.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 2 (HA 7039: 92168)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-2-original-art-marvel-/a/7039-92168.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3 (HA 7039: 92169)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-3-original-art-marvel-/a/7039-92169.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 4 (HA 7039: 92170)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-4-original-art-marvel-/a/7039-92170.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-5",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 5 (HA 7039: 92171)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-5-original-art-marvel-/a/7039-92171.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-6",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 6 (HA 7039: 92172)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-6-original-art-marvel-/a/7039-92172.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-7",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 7 (HA 7039: 92173)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-7-original-art-marvel-/a/7039-92173.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-8",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 8 (HA 7039: 92174)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-8-original-art-marvel-/a/7039-92174.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-9",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 (HA 7039: 92175)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-9-original-art-marvel-/a/7039-92175.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-10",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 10 (HA 7039: 92176)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-10-original-art-marvel-/a/7039-92176.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-11",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 11 (HA 7039: 92177)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-11-original-art-marvel-/a/7039-92177.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-12",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 12 (HA 7039: 92178)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-12-original-art-marvel-/a/7039-92178.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-88:1-event-13",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 13 (HA 7039: 92179)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-journey-into-mystery-88-the-vengeance-of-loki-page-13-original-art-marvel-/a/7039-92179.s?ic4=GalleryView-Thumbnail-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-89:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 89,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 3; Page 13.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-89:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3 (CAF 1596666)",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1596666"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-89:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 13: ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-90-91-92:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Journey into Mystery",
+      "issueNumber": 90,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified interior production art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:journey-into-mystery-90-91-92:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 101,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "complete_intact",
+    "generalCommentary": "Complete 13-Page Lead Story ('The Human Torch') \u2014 Pages 1\u201313.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 1 (HA 7234: 91014)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-1-human-torch-original-art-marvel-1962-/a/7234-91014.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Pages 2 & 3 (HA 7231: 91018)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-pages-2-3-fantastic-four-origin-recap-original-art-marvel-1962-/a/7231-91018.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 4 (HA 7234: 94045)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-4-original-art-marvel-1962-/a/7234-94045.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 5 (HA 7236: 94079)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-5-human-torch-original-art-marvel-1962-/a/7236-94079.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-5",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 6 (HA 7234: 94046)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-6-original-art-marvel-1962-/a/7234-94046.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-6",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 7 (HA 7231: 94066)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-story-page-7-original-art-marvel-1962-/a/7231-94066.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-7",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 8 (HA 7236: 94080)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-8-human-torch-original-art-marvel-1962-/a/7236-94080.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-8",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 (HA 7231: 94067)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-101-story-page-9-human-torch-original-art-marvel-1962-/a/7231-94067.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-9",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 10 (HA 7234: 94047)",
+        "sourceLink": "http://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-10-original-art-marvel-1962-/a/7234-94047.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-10",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 11 (HA 7236: 94081)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-11-human-torch-original-art-marvel-1962-/a/7236-94081.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-11",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 12 (HA 7236: 94082)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-12-human-torch-original-art-marvel-1962-/a/7236-94082.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-101:1-event-12",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 13 (HA 7239: 94049)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/jack-kirby-and-dick-ayers-strange-tales-101-story-page-13-human-torch-original-art-marvel-1962-/a/7239-94049.s?ic4=GalleryView-Thumbnail-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-102:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 102,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Gene Colan",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2; Page 5; Page 6; Page 8.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-102:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1818036",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1818036"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-102:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1996 Lot 687"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-102:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1997 Lot 186"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-102:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 8: ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-103:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 103,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 8.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-103:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1394963",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1394963"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-104:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 104,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2; Page 4.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-104:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 94097",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-104-story-page-2-original-art-marvel-1963-/a/7224-94097.s"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-104:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 32005",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-original-art-for-strange-tales-104-page-4-marvel-1962-you-can-t-ask-for-a-crazier-premise-than-what-you-/a/12121-32005.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-105:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 105,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 11.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-105:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1993 Lot 236"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-106:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 106,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 1 Title Splash.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-106:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sell My Comic Art Archives",
+        "sourceLink": "https://www.sellmycomicart.com/dick-ayers-art.html"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-107:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 107,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero verified production boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-107:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-108:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 108,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 1 Title Splash; Page 3.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-108:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 1 Splash (HA 7136: 92270)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-dick-ayers-strange-tales-108-splash-page-1-fantastic-four-original-art-marvel-1963-/a/7136-92270.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-108:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3 (HA 7152: 92125)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-strange-tales-108-the-painter-of-a-thousand-perils-page-3-human-torch-original-art/a/7152-92125.s?ic4=GalleryView-Thumbnail-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-109:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 109,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-109:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1423164",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1423164"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:strange-tales-110:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Strange Tales",
+      "issueNumber": 110,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "1st Doctor Strange; zero physical production boards from Ditko's 5-page story have surfaced.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:strange-tales-110:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-39:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 39,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete 13-Page Origin Story; Page 1 Title Splash; Page 7.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-39:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1996",
+        "sourceLink": "https://itsalljustcomics.com/2026/07/01/graham-nash-sothebys-1996-the-iron-man-origin-art-secret-46k-for-the-whole-story/"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-39:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Heritage Auctions July 2026",
+        "sourceLink": "https://puck.news/newsletter_content/paul-klees-angels-sothebys-44b-semester/"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-39:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 92016",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/don-heck-tales-of-suspense-39-story-page-7-first-appearance-of-iron-man-original-art-marvel-/a/7413-92016.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-40:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 40,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero physical original interior art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-40:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Grail Comics",
+        "sourceLink": "https://grailcomics.com/beginnings-of-iron-man"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-41:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 41,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Backup Story Interior Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-41:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 31328",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=31328"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-42:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 42,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete Book (13-page Iron Man story + backup stories).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-42:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1496"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-42:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Grail Comics Private Collection",
+        "sourceLink": "https://grailcomics.com/private-collection"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-43:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 43,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Backup Story Page 1 2-up Title Splash.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-43:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1137667",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1137667"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-44:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 44,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Title Splash Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-44:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1997 Lot 297"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-45:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 45,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Early Twice-Up Interior Story Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-45:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1916931",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1916931"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-45:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1942872",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1942872"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-46-47:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 46,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero physical production boards publicly documented.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-46-47:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-48:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales of Suspense",
+      "issueNumber": 48,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "1st Red and Gold Armor: Page 3; Page 14; Page 15; Page 16.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-48:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 639304",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=639304"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-48:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 567191",
+        "sourceLink": "https://www.comicartfans.com/GalleryPieceAsLike.asp?Piece=567191"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-48:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 2119282",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=2119282"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-of-suspense-48:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 10787659",
+        "sourceLink": "https://www.comicartfans.com/forsaledetails.asp?artid=10787659"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-27:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 27,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Bob Forgione",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete Book including 1st Henry Pym story 'The Man in the Ant Hill!'.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-27:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 5990",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/complete-story/jack-kirby-don-heck-bob-forgione-steve-ditko-original-art-for-tales-to-astonish-27-complete-book-marvel-1961-it-is-rare-that/a/803-5990.s?ic4=GalleryView-ShortDescription-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-35-41-43:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 35,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero verified interior production boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-35-41-43:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-36:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 36,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete Book; Backup Story Page 4.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-36:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1992 Lot 118"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-36:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Backup Page 4 (HA 7076: 92145)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-tales-to-astonish-36-page-4-original-art-marvel-1962-/a/7076-92145.s#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-37:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 37,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 9.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-37:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Comic Art Fans Registry",
+        "sourceLink": "https://www.comicartfans.com/searchresult.asp?w=1&txtSearch=dick+ayers+dick+ayers&Order&pm=3"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-38:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 38,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "complete_intact",
+    "generalCommentary": "Complete 8-Page Story (Backup).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-38:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Heritage Auctions Lot 3309",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/complete-story/don-heck-tales-to-astonish-38-complete-8-page-story-i-found-the-impossible-world-original-art-marvel-1962-a-tale-about-greed-/a/815-3309.s?ic4=GalleryView-Thumbnail-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-39:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 39,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 1 Title Splash.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-39:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1290094",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1290094"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-40:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 40,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Sol Brodsky",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "End Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-40:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1343867",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1343867"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-42:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 42,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 10.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-42:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1464587",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1464587"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-44:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "Tales to Astonish",
+      "issueNumber": 44,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Don Heck",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 17 (1st Wasp appearance).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:tales-to-astonish-44:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-1-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified Steve Ditko interior production boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-1-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-6:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 6,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 5; Page 6; Page 13; Page 21.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-6:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 5 (HA 830: 92186)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-6-page-5-original-art-marvel-1963-/a/830-92186.s?ic4=ListView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-6:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1993 Lot 62 & CAF 1137338",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1137338"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-6:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 13: Sotheby's 1997 Lot 629"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-6:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 21 (HA 7418: 92005)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-the-amazing-spider-man-6-story-page-21-original-art-marvel-1963-/a/7418-92005.s?ic4=ListView-ShortDescription-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-7:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 7,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 9; Page 12 (Vulture).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-7:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 (HA 7224: 91015)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-7-story-page-9-original-art-marvel-1963-/a/7224-91015.s?ic4=ListView-ShortDescription-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-7:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 12 (HA 7023: 93081)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-7-vulture-page-12-original-art-marvel-1963-/a/7023-93081.s?ic4=ListView-ShortDescription-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 8,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete 22-Page Book; 6-Page Secondary Story; Page 2; Page 3; Back Story Title Splash; Back Story Page 6.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Complete 22-Page / 6-Page Backup: Christie's 1996 / 1997"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 2 (HA 7384: 92006)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-the-amazing-spider-man-8-story-page-2-original-art-marvel-1964-/a/7384-92006.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3 (HA 7341: 93024)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/steve-ditko-amazing-spider-man-8-story-page-3-original-art-marvel-1964-/a/7341-93024.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Back Story Splash 1 (HA 7002: 92137)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-steve-ditko-amazing-spider-man-8-splash-page-1-spider-man-tackles-the-torch-original-art-marvel-/a/7002-92137.s?ic4=ListView-ShortDescription-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-8:1-event-5",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Back Story Page 6 (HA 7021: 92131)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-steve-ditko-amazing-spider-man-8-spider-man-tackles-the-torch-page-6-original-art-marvel-1964-/a/7021-92131.s?ic4=ListView-ShortDescription-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-9:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 9,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2; Page 19.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-9:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1997 Lot 404"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-9:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1991 Lot 285"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-10:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Amazing Spider-Man",
+      "issueNumber": 10,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 17; Complete 22-Page Story Block.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-10:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 17 (HA 7007: 94054)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/steve-ditko-amazing-spider-man-10-page-17-original-art-marvel-1964-/a/7007-94054.s"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:amazing-spider-man-10:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Complete Story (HA 803: 5859)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/complete-story/steve-ditko-original-art-for-amazing-spider-man-10-complete-22-page-story-marvel-1964-in-1962-stan-lee-created-a-new-vision-for-a/a/803-5859.s?ic4=ListView-ShortDescription-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-1:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2; Page 6; Page 12; Page 15; Page 16; Page 19; Page 20; Page 21; Page 22. (9 Pages Total Verified).",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 2 (HA 7270: 91021)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-avengers-1-story-page-2-original-art-marvel-1963-/a/7270-91021.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Pages 6, 12: Greg Manning / Christie's"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 15 (HA 828: 42122)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-page-15-original-art-marvel-1963-/a/828-42122.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 16 (HA 829: 41439)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-page-16-original-art-marvel-1963-/a/829-41439.s?ic4=ListView-ShortDescription-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-5",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 19 (HA 7023: 93148)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-avengers-1-hulk-vs-iron-man-page-19-original-art-marvel-1963-/a/7023-93148.s?ic4=ListView-ShortDescription-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-6",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 20 (HA 803: 5958)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-original-art-for-avengers-1-page-20-marvel-1963-thor-is-featured-in-every-single-panel-of-this-twice-up/a/803-5958.s?ic4=ListView-ShortDescription-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-7",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 21 (HA 7244: 91031)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-avengers-1-story-page-21-original-art-marvel-1963-/a/7244-91031.s?ic4=ListView-ShortDescription-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-1:1-event-8",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 22 (HA 803: 5959)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-dick-ayers-original-art-for-avengers-1-page-22-marvel-1963-here-is-an-important-page-from-a-key-first-issue-as-loki/a/803-5959.s?ic4=ListView-ShortDescription-071515#"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-2:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 2,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 1 Title Splash; Page 5; Page 6; Page 7; Page 14; Page 16; Page 19.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-2:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's / Sotheby's Auctions (1993-1997)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-3:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 3,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Paul Reinman",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Title Splash; Page 3; Page 6; Page 7; Page 8; Page 14; Page 17; Page 18.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-3:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Splash, 3, 6, 7, 14, 17, 18: Sotheby's / Christie's / CAF 1809853",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1809853"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-3:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 8 (HA 803: 5962)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-paul-reinman-original-art-for-avengers-3-page-8-marvel-1964-we-ve-got-iron-man-in-action-giant-man-and-the-wasp/a/803-5962.s?ic4=ListView-Thumbnail-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-4-9:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 4,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified interior production art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-4-9:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 5,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 19.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Superworld / ComicLink Consignment Records"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-6:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 6,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Pages 3 & 5; Page 9; Page 11; Page 12; Page 13; Page 14; Pages 18 & 22; Page 20; Pages 22 & 23.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-6:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's / Sotheby's / CAF 1887210",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1887210"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-6:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 3: ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-7:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 7,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 5.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-7:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-8:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 8,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-8:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1868836",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1868836"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:avengers-10:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Avengers",
+      "issueNumber": 10,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Captain America Pin-Up Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:avengers-10:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1993 Lot 395 & CAF 73822",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=73822"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-1-2:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Incredible Hulk",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified interior production art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-1-2:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Grail Comics",
+        "sourceLink": "https://grailcomics.com/beginnings-of-hulk"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-3:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Incredible Hulk",
+      "issueNumber": 3,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 10; Pages 19 & 20.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-3:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "ComicConnect Event Auction XXVI"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-3:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Grail Comics Census",
+        "sourceLink": "https://grailcomics.com/beginnings-of-hulk"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-4:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Incredible Hulk",
+      "issueNumber": 4,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Dick Ayers",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Pages 2 & 3; Pages 6 & 9; Page 7; Page 9.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-4:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Pages 2, 3, 6, 7: Christie's / Sotheby's 1997"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-4:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 9 (HA 7436: 94005)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-dick-ayers-the-incredible-hulk-4-story-page-9-original-art-marvel-1962-/a/7436-94005.s?ic4=ListView-Thumbnail-071515"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Incredible Hulk",
+      "issueNumber": 5,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Title Splash; Page 3; Page 5; Page 7; Page 10; Page 13; Unspecified Interior Page.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning / Christie's / Sotheby's auctions (1993-2000)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-6:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The Incredible Hulk",
+      "issueNumber": 6,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Steve Ditko",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 18; Page 22.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-6:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Sotheby's 1996 Lot 661"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:incredible-hulk-6:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Christie's 1993 Lot 390"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-1:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 1,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Paul Reinman",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete Book verified intact (part of famous trade for complete FF #3). Includes Page 5.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-1:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 5 (HA 7189: 92098)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-paul-reinman-x-men-1-story-page-5-original-art-marvel-1963-/a/7189-92098.s?ic4=GalleryView-Thumbnail-071515#"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-1:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Complete Book traded privately."
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-2:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 2,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Paul Reinman",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 2; Page 6; Page 13.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-2:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Artnet Archives",
+        "sourceLink": "https://www.artnet.com/artists/jack-kirby-and-paul-reinman/x-men-2-story-page-2-original-art-marvel-1963-0JldK5IRxQYkTBXFX_WLZw2"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-2:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 2123842",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=2123842"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-2:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 13: ComicConnect Event Auction (June 2017)"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-3-6:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 3,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "unconfirmed",
+    "generalCommentary": "Zero publicly verified interior production art boards.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-3-6:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Unconfirmed"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-4:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 4,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Paul Reinman",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Title Splash Page 1.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-4:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "HA Lot 91019",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-paul-reinman-x-men-4-splash-page-original-art-marvel-1964-/a/7231-91019.s"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-5:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 5,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 5.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-5:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Greg Manning Apr 2000 Lot 1542"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-7:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 7,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Complete Interior Issue Art.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-7:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Skirball Cultural Center Exhibition",
+        "sourceLink": "https://www.skirball.org/about/press/2025/skirball-cultural-center-presents-worldwide-debut-jack-kirby-heroes-and-humanity"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-8:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 8,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 4.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-8:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Nostalgic Investments",
+        "sourceLink": "https://www.nostalgicinvestments.com/comic-art/x-men-8-p4-large-art"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-9:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 9,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Page 3.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-9:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "CAF 1960059",
+        "sourceLink": "https://www.comicartfans.com/gallerypiece.asp?piece=1960059"
+      }
+    ],
+    "customMetadata": {}
+  },
+  {
+    "urn": "urn:altasset:original_art:marvel-silver-age:x-men-10:1",
+    "schemaVersion": "1.1.0",
+    "assetClass": "original_art",
+    "publicationTarget": {
+      "publisher": "Marvel Comics",
+      "seriesTitle": "The X-Men",
+      "issueNumber": 10,
+      "storyPageNumbers": [
+        1
+      ]
+    },
+    "artDetails": {
+      "workType": "interior_page",
+      "creators": [
+        {
+          "name": "Jack Kirby",
+          "role": "pencils_and_inks"
+        },
+        {
+          "name": "Chic Stone",
+          "role": "pencils_and_inks"
+        }
+      ]
+    },
+    "survivalStatus": "verified",
+    "generalCommentary": "Splash Page 1; Page 5; Page 10; Page 14; Page 18.",
+    "provenanceLedger": [
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-10:1-event-1",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Splash Page 1 (HA 7192: 91020)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/splash-pages/jack-kirby-and-chic-stone-x-men-10-splash-page-1-ka-zar-and-zabu-original-art-marvel-1965-/a/7192-91020.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-10:1-event-2",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 5 (HA 7163: 93126)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/panel-pages/jack-kirby-and-chic-stone-x-men-10-story-page-5-original-art-marvel-1965-/a/7163-93126.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-10:1-event-3",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 10 (HA 7283: 94077)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-story-page-10-ka-zar-and-zabu-original-art-marvel-1965-/a/7283-94077.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-10:1-event-4",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 14 (HA 7436: 94106)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-savage-land-first-appearance-issue-story-page-14-original-art-marvel-1965-/a/7436-94106.s?ic4=GalleryView-Thumbnail-071515"
+      },
+      {
+        "eventId": "urn:altasset:original_art:marvel-silver-age:x-men-10:1-event-5",
+        "eventType": "exhibition",
+        "date": "1900-01-01",
+        "notes": "Page 18 (HA 7384: 92106)",
+        "sourceLink": "https://comics.ha.com/itm/original-comic-art/story-page/jack-kirby-and-chic-stone-the-x-men-10-story-page-18-ka-zar-original-art-marvel-1965-/a/7384-92106.s?ic4=GalleryView-Thumbnail-071515"
+      }
+    ],
+    "customMetadata": {}
   }
 ]

@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { ArtCensusEntry, ArtStatus } from './types.js';
+import { ComicArtPage, formatSurvivalStatus, parseComicArtPages } from './types.js';
 
 function escapeHtml(str: string): string {
   return str
@@ -11,57 +11,56 @@ function escapeHtml(str: string): string {
     .replace(/'/g, '&#039;');
 }
 
-function getStatusClass(status: ArtStatus): string {
+function getStatusClass(status: ComicArtPage['survivalStatus']): string {
   switch (status) {
-    case 'Verified':
+    case 'verified':
       return 'status-verified';
-    case 'Complete':
-      return 'status-complete';
-    case 'Backup Only':
-      return 'status-backup';
-    case 'Ghost':
-      return 'status-ghost';
+    case 'complete_intact':
+      return 'status-complete-intact';
+    case 'dispersed':
+      return 'status-dispersed';
+    case 'unconfirmed':
+      return 'status-unconfirmed';
     default:
       return '';
   }
 }
 
-function generateStaticHtml(data: ArtCensusEntry[]): string {
-  // Alphabetize by seriesTitle, then sort by first issue number
+function generateStaticHtml(data: ComicArtPage[]): string {
   const sorted = [...data].sort((a, b) => {
-    const titleCmp = a.seriesTitle.localeCompare(b.seriesTitle);
+    const titleCmp = a.publicationTarget.seriesTitle.localeCompare(b.publicationTarget.seriesTitle);
     if (titleCmp !== 0) return titleCmp;
-    const numA = a.issueNumbers[0] ?? 0;
-    const numB = b.issueNumbers[0] ?? 0;
-    return numA - numB;
+    return a.publicationTarget.issueNumber - b.publicationTarget.issueNumber;
   });
 
   const rows = sorted
     .map((entry) => {
-      const isGhost = entry.status === 'Ghost';
-      const statusClass = getStatusClass(entry.status);
-
-      const provenanceItems = entry.provenance
-        .map((p) => {
-          if (p.url) {
-            return `<li><a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.label)}</a></li>`;
+      const isUnconfirmed = entry.survivalStatus === 'unconfirmed';
+      const statusClass = getStatusClass(entry.survivalStatus);
+      const provenanceItems = entry.provenanceLedger
+        .map((event) => {
+          const label = event.notes ?? `${event.eventType} (${event.date})`;
+          if (event.sourceLink) {
+            return `<li><a href="${escapeHtml(event.sourceLink)}" target="_blank" rel="noopener">${escapeHtml(label)}</a></li>`;
           }
-          return `<li>${escapeHtml(p.label)}</li>`;
+          return `<li>${escapeHtml(label)}</li>`;
         })
         .join('\n            ');
 
-      const provenanceHtml =
-        entry.provenance.length === 1 && !entry.provenance[0].url
-          ? escapeHtml(entry.provenance[0].label)
-          : `<ul class="link-list">\n            ${provenanceItems}\n          </ul>`;
+      const provenanceHtml = provenanceItems
+        ? `<ul class="link-list">\n            ${provenanceItems}\n          </ul>`
+        : '';
 
       return `
-      <tr${isGhost ? ' class="ghost-row"' : ''}>
-        <td><strong>${escapeHtml(entry.seriesTitle)}</strong></td>
-        <td>${escapeHtml(entry.issueDisplay)}</td>
-        <td><span class="status-tag ${statusClass}">${escapeHtml(entry.status)}</span></td>
-        <td>${escapeHtml(entry.description)}</td>
-        <td>${escapeHtml(entry.artists.join(', '))}</td>
+      <tr${isUnconfirmed ? ' class="ghost-row"' : ''}>
+        <td><strong>${escapeHtml(entry.publicationTarget.seriesTitle)}</strong></td>
+        <td>#${escapeHtml(String(entry.publicationTarget.issueNumber))}</td>
+        <td>${escapeHtml(entry.publicationTarget.storyPageNumbers.join(', '))}</td>
+        <td><span class="status-tag ${statusClass}">${escapeHtml(
+          formatSurvivalStatus(entry.survivalStatus)
+        )}</span></td>
+        <td>${escapeHtml(entry.generalCommentary ?? '')}</td>
+        <td>${escapeHtml(entry.artDetails.creators.map((creator) => creator.name).join(', '))}</td>
         <td>
           ${provenanceHtml}
         </td>
@@ -108,7 +107,7 @@ function generateStaticHtml(data: ArtCensusEntry[]): string {
     text-align: left;
     font-size: 13.5px;
   }
-  table.art-census-table th, 
+  table.art-census-table th,
   table.art-census-table td {
     padding: 10px 14px;
     border: 1px solid var(--border);
@@ -137,9 +136,9 @@ function generateStaticHtml(data: ArtCensusEntry[]): string {
     white-space: nowrap;
   }
   .status-verified { background-color: #e3f2fd; color: #0d47a1; }
-  .status-complete { background-color: #dcfce7; color: #15803d; }
-  .status-backup { background-color: #fef08a; color: #854d0e; }
-  .status-ghost { background-color: #ffebee; color: #b71c1c; }
+  .status-complete-intact { background-color: #dcfce7; color: #15803d; }
+  .status-dispersed { background-color: #fef08a; color: #854d0e; }
+  .status-unconfirmed { background-color: #ffebee; color: #b71c1c; }
 
   table.art-census-table a {
     color: var(--link-color);
@@ -169,6 +168,7 @@ function generateStaticHtml(data: ArtCensusEntry[]): string {
       <tr>
         <th>Title</th>
         <th>Issue</th>
+        <th>Pages</th>
         <th>Status</th>
         <th>Description / Survivor Details</th>
         <th>Artist(s)</th>
@@ -196,7 +196,7 @@ function run(): void {
   }
 
   const raw = fs.readFileSync(dataFilePath, 'utf-8');
-  const data: ArtCensusEntry[] = JSON.parse(raw);
+  const data = parseComicArtPages(JSON.parse(raw));
 
   if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir, { recursive: true });
