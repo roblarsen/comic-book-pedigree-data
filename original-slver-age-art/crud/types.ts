@@ -1,10 +1,94 @@
 import { isAltAsset, validateProvenanceLedger } from 'alt-asset-spec';
-import type { OriginalComicArtAsset, ProvenanceEvent } from 'alt-asset-spec';
+import type { OriginalComicArtAsset } from 'alt-asset-spec';
 
-export type ComicArtPage = OriginalComicArtAsset;
+export const PROVENANCE_EVENT_TYPES = [
+  'auction',
+  'private_sale',
+  'dealer_record',
+  'exhibition',
+  'private_collection',
+  'publication',
+] as const;
+
+export type ProvenanceEventType = (typeof PROVENANCE_EVENT_TYPES)[number];
+
+export interface ProvenanceEvent {
+  eventId: string;
+  eventType: ProvenanceEventType;
+  date: string;
+  notes?: string;
+  sourceLink?: string;
+}
+
+export type ComicArtPage = Omit<OriginalComicArtAsset, 'provenanceLedger'> & {
+  provenanceLedger: ProvenanceEvent[];
+};
 export type SurvivalStatus = ComicArtPage['survivalStatus'];
 
-const ISO_DATE_PATTERN = /^\d{4}(-\d{2}(-\d{2})?)?$/;
+const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+const isProvenanceEventType = (value: string): value is ProvenanceEventType =>
+  PROVENANCE_EVENT_TYPES.includes(value as ProvenanceEventType);
+
+const isValidIsoDate = (value: string): boolean => {
+  if (!ISO_DATE_PATTERN.test(value)) return false;
+  const [year, month, day] = value.split('-').map((part) => Number.parseInt(part, 10));
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return (
+    date.getUTCFullYear() === year &&
+    date.getUTCMonth() === month - 1 &&
+    date.getUTCDate() === day
+  );
+};
+
+const cleanString = (value: unknown): string | undefined => {
+  if (typeof value !== 'string') return undefined;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+};
+
+export function createProvenanceEventId(urn: string, index: number): string {
+  return `${urn}-event-${index + 1}`;
+}
+
+export function sanitizeProvenanceLedger(
+  rawLedger: unknown,
+  urn: string,
+  survivalStatus: SurvivalStatus
+): ProvenanceEvent[] {
+  if (survivalStatus === 'unconfirmed' || !Array.isArray(rawLedger)) {
+    return [];
+  }
+
+  return rawLedger
+    .map((rawEvent, index): ProvenanceEvent | null => {
+      if (!rawEvent || typeof rawEvent !== 'object') return null;
+
+      const candidate = rawEvent as Record<string, unknown>;
+      const eventTypeValue = cleanString(candidate.eventType);
+      const dateValue = cleanString(candidate.date);
+      const notesValue = cleanString(candidate.notes);
+      const sourceLinkValue = cleanString(candidate.sourceLink);
+      const eventIdValue = cleanString(candidate.eventId) ?? createProvenanceEventId(urn, index);
+
+      if (!eventTypeValue || !isProvenanceEventType(eventTypeValue) || !dateValue || !isValidIsoDate(dateValue)) {
+        return null;
+      }
+
+      if (!notesValue && !sourceLinkValue) {
+        return null;
+      }
+
+      return {
+        eventId: eventIdValue,
+        eventType: eventTypeValue,
+        date: dateValue,
+        notes: notesValue,
+        sourceLink: sourceLinkValue,
+      };
+    })
+    .filter((event): event is ProvenanceEvent => event !== null);
+}
 
 const isOriginalArtRecord = (value: unknown): value is ComicArtPage => {
   if (!isAltAsset(value) || value.assetClass !== 'original_art') {
@@ -51,53 +135,32 @@ export function parseComicArtPages(value: unknown): ComicArtPage[] {
       throw new Error(`Invalid original_art record at index ${index}.`);
     }
 
-    const ledgerValidation = validateProvenanceLedger(entry.provenanceLedger);
+    const normalizedEntry: ComicArtPage = {
+      ...entry,
+      provenanceLedger: sanitizeProvenanceLedger(
+        entry.provenanceLedger,
+        entry.urn,
+        entry.survivalStatus
+      ),
+    };
+
+    const ledgerValidation = validateProvenanceLedger(normalizedEntry.provenanceLedger);
     if (!ledgerValidation.isValid) {
       throw new Error(
         `Invalid provenance ledger at index ${index}: ${ledgerValidation.errors.join('; ')}`
       );
     }
 
-    entry.provenanceLedger.forEach((event, eventIndex) => {
-      if (!ISO_DATE_PATTERN.test(event.date)) {
+    normalizedEntry.provenanceLedger.forEach((event, eventIndex) => {
+      if (!isValidIsoDate(event.date)) {
         throw new Error(
           `Invalid provenance event date at index ${index}, ledger item ${eventIndex}.`
         );
       }
     });
 
-    return entry;
+    return normalizedEntry;
   });
-}
-
-export function parseProvenanceLines(raw: string, urn: string): ProvenanceEvent[] {
-  return raw
-    .split('\n')
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line, index) => {
-      const [notesPart, ...linkParts] = line.split('|').map((part) => part.trim());
-      const sourceLink = linkParts.join('|').trim();
-
-      return {
-        eventId: `${urn}-event-${index + 1}`,
-        eventType: 'exhibition',
-        date: '1900-01-01',
-        notes: notesPart,
-        sourceLink: sourceLink || undefined,
-      };
-    });
-}
-
-export function provenanceLinesFromLedger(ledger: ProvenanceEvent[]): string {
-  return ledger
-    .map((event) => {
-      if (event.sourceLink) {
-        return `${event.notes ?? event.eventType} | ${event.sourceLink}`;
-      }
-      return event.notes ?? event.eventType;
-    })
-    .join('\n');
 }
 
 export function formatSurvivalStatus(status: SurvivalStatus): string {

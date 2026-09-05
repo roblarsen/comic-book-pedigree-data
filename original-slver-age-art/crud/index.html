@@ -132,6 +132,23 @@
     .form-group textarea { resize: vertical; min-height: 70px; }
     .modal-footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
     .help-txt { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .provenance-editor { border: 1px solid var(--border); border-radius: 6px; padding: 10px; background: #f8fafc; }
+    .provenance-editor.is-disabled { opacity: 0.65; }
+    .provenance-events { display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; }
+    .provenance-event-row { border: 1px solid var(--border); border-radius: 6px; padding: 10px; background: #fff; }
+    .provenance-event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .provenance-event-grid label,
+    .provenance-event-row > label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .provenance-event-actions { display: flex; gap: 8px; margin-top: 8px; }
   </style>
 </head>
 <body>
@@ -233,9 +250,12 @@
           <input type="checkbox" id="isBackupStory" />
         </div>
         <div class="form-group">
-          <label for="provenance">Provenance Ledger Lines (One per line: <code>Note | URL</code> or just <code>Note</code>)</label>
-          <textarea id="provenance" rows="5" placeholder="Heritage Sale Lot 91015 | https://comics.ha.com/...&#10;Private collection note"></textarea>
-          <div class="help-txt">Each line is stored as an <code>exhibition</code> event with placeholder date <code>1900-01-01</code>.</div>
+          <label>Provenance Ledger</label>
+          <div id="provenance-editor" class="provenance-editor">
+            <div id="provenance-events" class="provenance-events"></div>
+            <button type="button" id="add-provenance-event-btn" class="secondary">Add Event</button>
+          </div>
+          <div id="provenance-unconfirmed-helper" class="help-txt" hidden>Unconfirmed assets cannot contain provenance ledger events.</div>
         </div>
         <div class="modal-footer">
           <button type="button" class="secondary" id="cancel-btn">Cancel</button>
