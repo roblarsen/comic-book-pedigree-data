@@ -140,15 +140,14 @@
     <h1>Marvel Silver Age Art Census</h1>
     <div style="display: flex; align-items: center; gap: 12px; margin-top: 4px;">
       <span id="file-status" style="font-size: 12px; padding: 2px 8px; border: 1px dashed var(--border); border-radius: 4px; color: var(--muted);">
-        ⚠️ No File Linked
+        Loading data.json...
       </span>
       <span id="save-indicator" style="font-size: 12px; color: #16a34a; font-weight: 600; opacity: 0; transition: opacity 0.3s ease;">
-        ✓ Saved to disk
+        Downloaded data.json
       </span>
     </div>
   </div>
   <div class="btn-group">
-    <button id="open-file-btn" class="secondary">📂 Link data.json</button>
     <button id="undo-btn" class="secondary" disabled>Undo (0)</button>
     <button id="add-btn">+ New Entry</button>
   </div>
@@ -246,6 +245,13 @@
     </div>
   </div>
 
+  <script type="importmap">
+    {
+      "imports": {
+        "alt-asset-spec": "./node_modules/alt-asset-spec/dist/index.js"
+      }
+    }
+  </script>
   <script type="module" src="./dist/app.js"></script>
 </body>
 </html>

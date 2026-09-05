@@ -14,7 +14,6 @@ const DEFAULT_PUBLISHER = 'Marvel Comics';
 
 class CensusApp {
   private data: ComicArtPage[] = [];
-  private fileHandle: FileSystemFileHandle | null = null;
   private searchQuery: string = '';
   private statusFilter: string = '';
   private undoStack: ComicArtPage[][] = [];
@@ -23,57 +22,46 @@ class CensusApp {
     this.initUndoStack();
     this.bindEvents();
     this.render();
+    void this.loadData();
   }
 
   // ==========================
-  // File System Access API
+  // Data Loading & Saving
   // ==========================
-  private async openFile(): Promise<void> {
+  private async loadData(): Promise<void> {
     try {
-      const [handle] = await (window as any).showOpenFilePicker({
-        types: [
-          {
-            description: 'JSON Files',
-            accept: { 'application/json': ['.json'] },
-          },
-        ],
-        multiple: false,
-      });
+      const response = await fetch('data.json');
+      if (!response.ok) {
+        throw new Error(`Could not load data.json (${response.status})`);
+      }
 
-      this.fileHandle = handle;
-      const file = await handle.getFile();
-      const text = await file.text();
-      const parsed = JSON.parse(text);
-
-      this.data = parseComicArtPages(parsed);
+      this.data = parseComicArtPages(await response.json());
       this.undoStack = [];
       this.saveUndoStack();
-      this.updateFileStatusBadge(file.name);
+      this.updateFileStatusBadge('data.json');
       this.render();
     } catch (err: any) {
-      if (err.name !== 'AbortError') {
-        console.error('File Open Error:', err);
-        alert('Could not open file: ' + err.message);
-      }
+      console.error('Data Load Error:', err);
+      this.updateFileStatusBadge('Unable to load data.json', true);
+      alert('Could not load data.json: ' + err.message);
     }
   }
 
   private async syncToDisk(): Promise<void> {
-    if (!this.fileHandle) {
-      alert('No file currently linked. Please click "Open / Link Local File" to choose your data.json.');
-      return;
-    }
-
     try {
-      const writableStream = await (this.fileHandle as any).createWritable();
       const sortedData = this.sortData(this.data);
       const content = JSON.stringify(sortedData, null, 2);
-      await writableStream.write(content);
-      await writableStream.close();
+      const blob = new Blob([content], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'data.json';
+      link.click();
+      URL.revokeObjectURL(url);
       this.flashSaveIndicator();
     } catch (err: any) {
-      console.error('File Write Error:', err);
-      alert('Error writing directly to file: ' + err.message);
+      console.error('Data Download Error:', err);
+      alert('Could not download data.json: ' + err.message);
     }
   }
 
@@ -229,7 +217,6 @@ class CensusApp {
   // UI & Event Bindings
   // ==========================
   private bindEvents(): void {
-    const openBtn = document.getElementById('open-file-btn') as HTMLButtonElement;
     const undoBtn = document.getElementById('undo-btn') as HTMLButtonElement;
     const searchInput = document.getElementById('search-input') as HTMLInputElement;
     const statusFilter = document.getElementById('status-filter') as HTMLSelectElement;
@@ -237,7 +224,6 @@ class CensusApp {
     const cancelBtn = document.getElementById('cancel-btn') as HTMLButtonElement;
     const form = document.getElementById('census-form') as HTMLFormElement;
 
-    openBtn.addEventListener('click', () => this.openFile());
     undoBtn.addEventListener('click', () => this.undo());
     addBtn.addEventListener('click', () => this.openModal());
     cancelBtn.addEventListener('click', () => this.closeModal());
@@ -267,12 +253,12 @@ class CensusApp {
     this.updateUndoButton();
   }
 
-  private updateFileStatusBadge(filename: string): void {
+  private updateFileStatusBadge(filename: string, isError = false): void {
     const badge = document.getElementById('file-status') as HTMLElement;
     if (badge) {
-      badge.textContent = `📁 Linked: ${filename}`;
-      badge.style.color = '#15803d';
-      badge.style.borderColor = '#86efac';
+      badge.textContent = isError ? filename : `Loaded: ${filename}`;
+      badge.style.color = isError ? '#b91c1c' : '#15803d';
+      badge.style.borderColor = isError ? '#fecaca' : '#86efac';
     }
   }
 
