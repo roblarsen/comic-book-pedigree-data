@@ -5,11 +5,11 @@
   "type": "module",
   "description": "Silver Age Marvel original art census CRUD manager and static table builder",
   "scripts": {
-    "dev": "npm run build:app && serve .",
+    "dev": "npm run build:app && node dev-server.mjs",
     "build:app": "tsc",
     "build:static": "tsx build-html.ts",
     "build": "npm run build:app && npm run build:static",
-    "serve": "npm run build:app && serve ."
+    "serve": "npm run build:app && node dev-server.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

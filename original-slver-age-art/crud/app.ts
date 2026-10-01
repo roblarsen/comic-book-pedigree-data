@@ -53,18 +53,41 @@ class CensusApp {
     try {
       const sortedData = this.sortData(this.data).map((entry) => this.normalizeEntryForPersistence(entry));
       const content = JSON.stringify(sortedData, null, 2);
-      const blob = new Blob([content], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'data.json';
-      link.click();
-      URL.revokeObjectURL(url);
-      this.flashSaveIndicator();
+
+      const savedToRepo = await this.saveToRepository(content);
+      if (savedToRepo) {
+        this.flashSaveIndicator('Saved data.json');
+      } else {
+        this.downloadDataFile(content);
+        this.flashSaveIndicator('Downloaded data.json');
+      }
     } catch (err: any) {
-      console.error('Data Download Error:', err);
-      alert('Could not download data.json: ' + err.message);
+      console.error('Data Save Error:', err);
+      alert('Could not save data.json: ' + err.message);
     }
+  }
+
+  private async saveToRepository(content: string): Promise<boolean> {
+    try {
+      const response = await fetch('/__save_data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: content,
+      });
+      return response.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  private downloadDataFile(content: string): void {
+    const blob = new Blob([content], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'data.json';
+    link.click();
+    URL.revokeObjectURL(url);
   }
 
   // ==========================
@@ -269,9 +292,10 @@ class CensusApp {
     }
   }
 
-  private flashSaveIndicator(): void {
+  private flashSaveIndicator(message: string): void {
     const indicator = document.getElementById('save-indicator') as HTMLElement;
     if (indicator) {
+      indicator.textContent = message;
       indicator.style.opacity = '1';
       setTimeout(() => {
         indicator.style.opacity = '0';
