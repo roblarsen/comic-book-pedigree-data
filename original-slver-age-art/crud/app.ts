@@ -1,10 +1,12 @@
 import {
   ComicArtPage,
+  ProvenanceEvent,
+  PROVENANCE_EVENT_TYPES,
   SurvivalStatus,
+  createProvenanceEventId,
   formatSurvivalStatus,
   parseComicArtPages,
-  parseProvenanceLines,
-  provenanceLinesFromLedger,
+  sanitizeProvenanceLedger,
 } from './types.js';
 
 const UNDO_STACK_KEY = 'silver_age_census_undo_stack';
@@ -49,20 +51,43 @@ class CensusApp {
 
   private async syncToDisk(): Promise<void> {
     try {
-      const sortedData = this.sortData(this.data);
+      const sortedData = this.sortData(this.data).map((entry) => this.normalizeEntryForPersistence(entry));
       const content = JSON.stringify(sortedData, null, 2);
-      const blob = new Blob([content], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'data.json';
-      link.click();
-      URL.revokeObjectURL(url);
-      this.flashSaveIndicator();
+
+      const savedToRepo = await this.saveToRepository(content);
+      if (savedToRepo) {
+        this.flashSaveIndicator('Saved data.json');
+      } else {
+        this.downloadDataFile(content);
+        this.flashSaveIndicator('Downloaded data.json');
+      }
     } catch (err: any) {
-      console.error('Data Download Error:', err);
-      alert('Could not download data.json: ' + err.message);
+      console.error('Data Save Error:', err);
+      alert('Could not save data.json: ' + err.message);
     }
+  }
+
+  private async saveToRepository(content: string): Promise<boolean> {
+    try {
+      const response = await fetch('/__save_data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: content,
+      });
+      return response.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  private downloadDataFile(content: string): void {
+    const blob = new Blob([content], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'data.json';
+    link.click();
+    URL.revokeObjectURL(url);
   }
 
   // ==========================
@@ -141,7 +166,6 @@ class CensusApp {
       .value as ComicArtPage['artDetails']['workType'];
     const artistsRaw = (document.getElementById('artists') as HTMLInputElement).value;
     const description = (document.getElementById('description') as HTMLTextAreaElement).value.trim();
-    const provRaw = (document.getElementById('provenance') as HTMLTextAreaElement).value;
     const isBackupStory = (document.getElementById('isBackupStory') as HTMLInputElement).checked;
 
     const issueNumber = Number.parseInt(issueNumberRaw, 10);
@@ -180,7 +204,7 @@ class CensusApp {
       },
       survivalStatus: status,
       generalCommentary: description || undefined,
-      provenanceLedger: parseProvenanceLines(provRaw, entryUrn),
+      provenanceLedger: this.readProvenanceEventsFromForm(entryUrn, status),
       customMetadata: {},
     };
 
@@ -223,11 +247,17 @@ class CensusApp {
     const addBtn = document.getElementById('add-btn') as HTMLButtonElement;
     const cancelBtn = document.getElementById('cancel-btn') as HTMLButtonElement;
     const form = document.getElementById('census-form') as HTMLFormElement;
+    const statusSelect = document.getElementById('status') as HTMLSelectElement;
+    const addProvenanceBtn = document.getElementById('add-provenance-event-btn') as HTMLButtonElement;
+    const provenanceEvents = document.getElementById('provenance-events') as HTMLDivElement;
 
     undoBtn.addEventListener('click', () => this.undo());
     addBtn.addEventListener('click', () => this.openModal());
     cancelBtn.addEventListener('click', () => this.closeModal());
     form.addEventListener('submit', (e) => this.handleFormSubmit(e));
+    statusSelect.addEventListener('change', () => this.handleStatusChange());
+    addProvenanceBtn.addEventListener('click', () => this.addProvenanceEventRow());
+    provenanceEvents.addEventListener('click', (event) => this.handleProvenanceRowActions(event));
 
     searchInput.addEventListener('input', (e) => {
       this.searchQuery = (e.target as HTMLInputElement).value.toLowerCase();
@@ -262,9 +292,10 @@ class CensusApp {
     }
   }
 
-  private flashSaveIndicator(): void {
+  private flashSaveIndicator(message: string): void {
     const indicator = document.getElementById('save-indicator') as HTMLElement;
     if (indicator) {
+      indicator.textContent = message;
       indicator.style.opacity = '1';
       setTimeout(() => {
         indicator.style.opacity = '0';
@@ -334,12 +365,169 @@ class CensusApp {
     });
   }
 
+  private normalizeEntryForPersistence(entry: ComicArtPage): ComicArtPage {
+    return {
+      ...entry,
+      provenanceLedger: sanitizeProvenanceLedger(entry.provenanceLedger, entry.urn, entry.survivalStatus),
+    };
+  }
+
+  private readProvenanceEventsFromForm(urn: string, status: SurvivalStatus): ProvenanceEvent[] {
+    if (status === 'unconfirmed') {
+      return [];
+    }
+
+    const rows = Array.from(document.querySelectorAll('.provenance-event-row'));
+    const rawEvents = rows.map((row, index) => {
+      const eventId = (row.querySelector('.provenance-event-id') as HTMLInputElement)?.value.trim();
+      const eventType = (row.querySelector('.provenance-event-type') as HTMLSelectElement)?.value.trim();
+      const date = (row.querySelector('.provenance-event-date') as HTMLInputElement)?.value.trim();
+      const notes = (row.querySelector('.provenance-event-notes') as HTMLTextAreaElement)?.value.trim();
+      const sourceLink = (row.querySelector('.provenance-event-source-link') as HTMLInputElement)?.value.trim();
+
+      return {
+        eventId: eventId || createProvenanceEventId(urn, index),
+        eventType,
+        date,
+        notes,
+        sourceLink,
+      };
+    });
+
+    return sanitizeProvenanceLedger(rawEvents, urn, status);
+  }
+
+  private handleStatusChange(): void {
+    const status = (document.getElementById('status') as HTMLSelectElement).value as SurvivalStatus;
+
+    if (status === 'unconfirmed') {
+      const provenanceEvents = document.getElementById('provenance-events') as HTMLDivElement;
+      if (provenanceEvents.childElementCount > 0) {
+        provenanceEvents.innerHTML = '';
+      }
+    }
+
+    this.updateProvenanceEditorState();
+  }
+
+  private updateProvenanceEditorState(): void {
+    const status = (document.getElementById('status') as HTMLSelectElement).value as SurvivalStatus;
+    const editor = document.getElementById('provenance-editor') as HTMLDivElement;
+    const helper = document.getElementById('provenance-unconfirmed-helper') as HTMLDivElement;
+    const addBtn = document.getElementById('add-provenance-event-btn') as HTMLButtonElement;
+    const controls = editor.querySelectorAll('input, select, textarea, button');
+    const isUnconfirmed = status === 'unconfirmed';
+
+    editor.classList.toggle('is-disabled', isUnconfirmed);
+    addBtn.disabled = isUnconfirmed;
+    helper.hidden = !isUnconfirmed;
+
+    controls.forEach((control) => {
+      const element = control as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement | HTMLButtonElement;
+      element.disabled = isUnconfirmed;
+    });
+  }
+
+  private addProvenanceEventRow(event?: ProvenanceEvent): void {
+    const urn = (document.getElementById('entry-id') as HTMLInputElement).value.trim();
+    const seriesTitle = (document.getElementById('seriesTitle') as HTMLInputElement).value.trim();
+    const issueNumberRaw = (document.getElementById('issueNumber') as HTMLInputElement).value.trim();
+    const issueNumber = Number.parseInt(issueNumberRaw, 10);
+    const fallbackUrn =
+      urn || this.createUrn(seriesTitle || 'untitled', Number.isNaN(issueNumber) ? 1 : issueNumber);
+    const eventsContainer = document.getElementById('provenance-events') as HTMLDivElement;
+    const eventIndex = eventsContainer.children.length;
+    const eventId = event?.eventId ?? createProvenanceEventId(fallbackUrn, eventIndex);
+    const row = document.createElement('div');
+
+    row.className = 'provenance-event-row';
+    row.innerHTML = `
+      <div class="provenance-event-grid">
+        <label>Event ID
+          <input class="provenance-event-id" type="text" value="${this.escapeHtml(eventId)}" readonly />
+        </label>
+        <label>Event Type
+          <select class="provenance-event-type">
+            ${PROVENANCE_EVENT_TYPES.map(
+              (eventType) =>
+                `<option value="${eventType}" ${(event?.eventType ?? 'auction') === eventType ? 'selected' : ''}>${eventType}</option>`
+            ).join('')}
+          </select>
+        </label>
+        <label>Date
+          <input class="provenance-event-date" type="date" value="${this.escapeHtml(event?.date ?? '')}" />
+        </label>
+        <label>Source Link
+          <input class="provenance-event-source-link" type="url" value="${this.escapeHtml(event?.sourceLink ?? '')}" />
+        </label>
+      </div>
+      <label>Notes
+        <textarea class="provenance-event-notes" rows="2">${this.escapeHtml(event?.notes ?? '')}</textarea>
+      </label>
+      <div class="provenance-event-actions">
+        <button type="button" class="secondary" data-provenance-action="up">Move Up</button>
+        <button type="button" class="secondary" data-provenance-action="down">Move Down</button>
+        <button type="button" class="danger" data-provenance-action="remove">Remove Event</button>
+      </div>
+    `;
+
+    eventsContainer.appendChild(row);
+    this.renumberProvenanceEventIds();
+    this.updateProvenanceEditorState();
+  }
+
+  private handleProvenanceRowActions(event: Event): void {
+    const target = event.target as HTMLElement;
+    const actionElement = target.closest('[data-provenance-action]') as HTMLElement | null;
+    const action = actionElement?.getAttribute('data-provenance-action');
+    if (!action || !actionElement) return;
+
+    const row = actionElement.closest('.provenance-event-row') as HTMLDivElement | null;
+    if (!row) return;
+
+    if (action === 'remove') {
+      row.remove();
+    } else if (action === 'up') {
+      const previous = row.previousElementSibling;
+      if (previous) {
+        row.parentElement?.insertBefore(row, previous);
+      }
+    } else if (action === 'down') {
+      const next = row.nextElementSibling;
+      if (next) {
+        row.parentElement?.insertBefore(next, row);
+      }
+    }
+
+    this.renumberProvenanceEventIds();
+    this.updateProvenanceEditorState();
+  }
+
+  private renumberProvenanceEventIds(): void {
+    const urn = (document.getElementById('entry-id') as HTMLInputElement).value.trim();
+    const seriesTitle = (document.getElementById('seriesTitle') as HTMLInputElement).value.trim();
+    const issueNumberRaw = (document.getElementById('issueNumber') as HTMLInputElement).value.trim();
+    const issueNumber = Number.parseInt(issueNumberRaw, 10);
+    const fallbackUrn =
+      urn || this.createUrn(seriesTitle || 'untitled', Number.isNaN(issueNumber) ? 1 : issueNumber);
+    const rows = Array.from(document.querySelectorAll('.provenance-event-row'));
+
+    rows.forEach((row, index) => {
+      const eventIdInput = row.querySelector('.provenance-event-id') as HTMLInputElement | null;
+      if (eventIdInput) {
+        eventIdInput.value = createProvenanceEventId(fallbackUrn, index);
+      }
+    });
+  }
+
   private openModal(entry?: ComicArtPage): void {
     const backdrop = document.getElementById('modal-backdrop') as HTMLDivElement;
     const title = document.getElementById('modal-title') as HTMLHeadingElement;
     const form = document.getElementById('census-form') as HTMLFormElement;
 
     form.reset();
+    const provenanceEvents = document.getElementById('provenance-events') as HTMLDivElement;
+    provenanceEvents.innerHTML = '';
 
     if (entry) {
       const issue = entry.publicationTarget.issueNumber;
@@ -357,14 +545,13 @@ class CensusApp {
       (document.getElementById('description') as HTMLTextAreaElement).value = entry.generalCommentary ?? '';
       (document.getElementById('isBackupStory') as HTMLInputElement).checked =
         entry.publicationTarget.isBackupStory === true;
-      (document.getElementById('provenance') as HTMLTextAreaElement).value = provenanceLinesFromLedger(
-        entry.provenanceLedger
-      );
+      entry.provenanceLedger.forEach((event) => this.addProvenanceEventRow(event));
     } else {
       title.textContent = 'Add New Entry';
       (document.getElementById('entry-id') as HTMLInputElement).value = '';
     }
 
+    this.updateProvenanceEditorState();
     backdrop.classList.add('open');
   }
 
